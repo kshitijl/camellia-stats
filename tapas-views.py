@@ -1,19 +1,10 @@
 #!/usr/bin/env python
 
-import requests
 from lxml import html
-
-def download_with_user_agent(url):
-    # We need to send a User-Agent or else Tapas returns a 403
-    # Forbidden.
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; \
-        Intel Mac OS X 10_11_5) AppleWebKit/537.36 \
-        (KHTML, lik} Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    return requests.get(url,headers=headers).content
+import common
 
 def download_comic_home_page(comic_name):
-    return download_with_user_agent('http://tapas.io/series/{}'.format(comic_name))
+    return common.download_with_user_agent('http://tapas.io/series/{}'.format(comic_name))
 
 def extract_pageviews_string_from_html(content):
     parsed_tree = html.fromstring(content)
@@ -34,28 +25,11 @@ def extract_pageviews_string_from_html(content):
 
     return li_tag_containing_pageviews.attrib["data-title"]
 
-def parse_number_with_commas(s):
-    return int(s.replace(',', ''))
-
 def parse_pageviews_string(pageviews_string):
     if not pageviews_string.endswith(' views'):
         raise AttributeError("Expected a string that ends with the ' views', got: {}".format(pageviews_string))
     numeric_string = pageviews_string[:-len(' views')]
-    return parse_number_with_commas(numeric_string)
-
-def save_content_to_dated_file_in_dir(content, directory, as_of=None):
-    import datetime
-        
-    if not as_of:
-        as_of = datetime.datetime.now()
-        
-    time_string = datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
-
-    import os
-    filename = os.path.join(directory, time_string)
-
-    with open(filename, 'w') as output_file:
-        output_file.write(content)
+    return common.parse_number_with_commas(numeric_string)
 
 def main():
     import argparse
@@ -72,7 +46,7 @@ def main():
         comic_homepage_html = file(args.input_file_instead_of_downloading).read()
     else:
         comic_homepage_html = download_comic_home_page('Camellia')
-        save_content_to_dated_file_in_dir(comic_homepage_html, args.download_location)
+        common.save_content_to_dated_file_in_dir(comic_homepage_html, args.download_location)
         
     print parse_pageviews_string(extract_pageviews_string_from_html(comic_homepage_html))
 
