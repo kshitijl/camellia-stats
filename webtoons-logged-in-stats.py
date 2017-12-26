@@ -76,6 +76,9 @@ class Scraped_statistics(object):
 
     def scrape_all(self, as_of):
         return { stat: self.scrape_one(stat, as_of) for stat in self.all_stats() }
+
+def append_to_log(log_filename, as_of, contents):
+    pass
     
 def main():    
     stats = Scraped_statistics({
@@ -89,7 +92,8 @@ def main():
                 'likes': Webtoons_statistic(
                     xpath='//*[@id="content"]/div[2]/ul/li/div/p[2]/em/text()')})})
 
-    print stats.scrape_all(as_of=datetime.datetime(2017, 12, 26, 00, 32))
+    as_of = datetime.datetime(2017, 12, 26, 00, 32)
+    append_to_log(as_of=as_of,stats.scrape_all(as_of=as_of))
 
 if __name__ == "__main__":
     main()
