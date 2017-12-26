@@ -43,6 +43,38 @@ def parse_pageviews_string(pageviews_string):
     numeric_string = pageviews_string[:-len(' views')]
     return parse_number_with_commas(numeric_string)
 
+def save_content_to_dated_file_in_dir(content, directory, as_of=None):
+    import datetime
+        
+    if not as_of:
+        as_of = datetime.datetime.now()
+        
+    time_string = datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
+
+    import os
+    filename = os.path.join(directory, time_string)
+
+    with open(filename, 'w') as output_file:
+        output_file.write(content)
+
+def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Download and parse pageviews for Camellia on Tapas")
+    parser.add_argument('--download-location',
+                        type=str,
+                        default='./downloaded-stats-pages/tapas-camellia-home-page',
+                        help="The downloaded html will be saved to file named the current time in this directory")
+    parser.add_argument('--input-file-instead-of-downloading', type=str, default=None)
+
+    args = parser.parse_args()
+    
+    if args.input_file_instead_of_downloading:
+        comic_homepage_html = file(args.input_file_instead_of_downloading).read()
+    else:
+        comic_homepage_html = download_comic_home_page('Camellia')
+        save_content_to_dated_file_in_dir(comic_homepage_html, args.download_location)
+        
+    print parse_pageviews_string(extract_pageviews_string_from_html(comic_homepage_html))
+
 if __name__ == "__main__":
-    camellia_home_page = download_comic_home_page('Camellia')
-    print parse_pageviews_string(extract_pageviews_string_from_html(camellia_home_page))
+    main()
