@@ -12,3 +12,5 @@ INFO:root:Retrieving tapas-creator-page.subs as-of Current_as_of 2017-12-27-02-1
 INFO:root:Downloading and caching https://tapas.io/ladypcpx/subscribers as-of 2017-12-27-02-10
 INFO:root:Parsing tapas-creator-page.subs
 INFO:root:Appending successful scrapes to event-log: {'2017-12-27-02-10': {'tapas-creator-page.subs': 10375, 'webtoons.subs': 17184, 'webtoons.likes': 29736, 'webtoons.montly_pvs': 116180, 'tapas-comic-page.views': 299350}}
+To https://github.com/kshitijl/camellia-stats.git
+   2ec431b..46aa75c  master -> master
