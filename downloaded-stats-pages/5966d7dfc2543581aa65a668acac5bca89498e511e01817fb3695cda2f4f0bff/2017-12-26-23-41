@@ -126,7 +126,7 @@
       appDomain: 'https://tapas.io',
       wsDomain: 'https://tapas.io:8531',
       PSTOffsetTime: -480,
-      today : '2017/12/25 20:58:49',
+      today : '2017/12/26 21:41:44',
       prefixResourceSrc : 'resources',
       staticServer : 'https://d30womf5coomej.cloudfront.net',
       soundCloudKey : '77ebe8493143e294405e4a380b2515df',
@@ -288,7 +288,7 @@
         <header class="ep-header ">
                         <h1 class="title" id="episode-924421-title">Chapter 1 Page 29</h1>
                         <span class="date" title="2017-12-20 20:52:27 PST">
-                                    <a class="published-date">5 days ago</a>
+                                    <a class="published-date">6 days ago</a>
                             </span>
         </header>
                                                             <article class="ep-contents " style="min-height: 7407px;">
@@ -329,7 +329,7 @@
                         <a href="#!/episode/thumbs/924421?type=COMMUNITY"
                            class="have-to-sign thumb-btn up mix-btn large "
                            data-where="Like Button"
-                           data-liked-count="1032"
+                           data-liked-count="1044"
                            data-set-focus="false"
                                                       data-permalink="https://tapas.io/episode/924421">
                             <i class="sp-btn-liked"></i>
@@ -342,46 +342,46 @@
                             </div>
                         </div>
                         <div class="liked-users">
-                                                                                        <a href="/xxsweetingxx"
+                                                                                        <a href="/unicornpoop123"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="xxsweetingxx">
-                                    <img src="https://graph.facebook.com/v2.5/1432028746839899/picture?type=large"
-                                         alt="xxsweetingxx"
+                                   data-toggle="tooltip" data-title="OuranEaterOnline">
+                                    <img src="https://d30womf5coomej.cloudfront.net/ua/18/c5b0412a-bff6-4d26-a1db-1298b4b8f913.jpg"
+                                         alt="OuranEaterOnline"
                                          width="40" height="40" class="circle"/>
                                 </a>
-                                                            <a href="/aaliyah19762"
+                                                            <a href="/Ngoh04"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="nini">
-                                    <img src="https://d30womf5coomej.cloudfront.net/ua/2b/2ab20084-6054-4c9e-9254-160e8fc0f19c.png"
-                                         alt="nini"
+                                   data-toggle="tooltip" data-title="THE-MASKED-FOX">
+                                    <img src="https://d30womf5coomej.cloudfront.net/ua/99/3260151b-09eb-40eb-9ed1-1018a3721c69.png"
+                                         alt="THE-MASKED-FOX"
                                          width="40" height="40" class="circle"/>
                                 </a>
-                                                            <a href="/haileymohamed5"
+                                                            <a href="/boogirl800"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="Hailey">
-                                    <img src="https://d30womf5coomej.cloudfront.net/ua/ce/f7d1d4d5-5ccd-408e-b1b8-03b1f8bca7ac.jpg"
-                                         alt="Hailey"
+                                   data-toggle="tooltip" data-title="boogirl800">
+                                    <img src="https://graph.facebook.com/v2.5/1095055270523040/picture?type=large"
+                                         alt="boogirl800"
                                          width="40" height="40" class="circle"/>
                                 </a>
-                                                            <a href="/kaiqitee2"
+                                                            <a href="/deadmanhangman"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="KittyKat">
-                                    <img src="https://d30womf5coomej.cloudfront.net/ua/f6/f8bb4f52-05e8-4403-81cf-32041c5dcc74.jpg"
-                                         alt="KittyKat"
+                                   data-toggle="tooltip" data-title="quinthecookie">
+                                    <img src="https://d30womf5coomej.cloudfront.net/ua/5a/39d33eb4-eac1-4eb2-908c-9805e4013fce.jpg"
+                                         alt="quinthecookie"
                                          width="40" height="40" class="circle"/>
                                 </a>
-                                                            <a href="/maliboo11MN"
+                                                            <a href="/victoriazhang111"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="maliboo11MN">
-                                    <img src="https://lh3.googleusercontent.com/-nOvx0wjL66c/AAAAAAAAAAI/AAAAAAAAAeY/ofuICgHZ3O4/photo.jpg?sz=50"
-                                         alt="maliboo11MN"
+                                   data-toggle="tooltip" data-title="victoriazhang111">
+                                    <img src="https://graph.facebook.com/v2.5/795854700599874/picture?type=large"
+                                         alt="victoriazhang111"
                                          width="40" height="40" class="circle"/>
                                 </a>
-                                                            <a href="/samanthabliss2000"
+                                                            <a href="/elisee2005a"
                                    class="liked-user-thumb "
-                                   data-toggle="tooltip" data-title="Aleynfei">
-                                    <img src="https://d30womf5coomej.cloudfront.net/ua/17/3761d74f-989f-4aa0-9279-93eef7aa136c.jpg"
-                                         alt="Aleynfei"
+                                   data-toggle="tooltip" data-title="elisee2005a">
+                                    <img src="https://d30womf5coomej.cloudfront.net/ua/02/2b08f438-ec74-4656-914c-8a6f646fbf9d.jpg"
+                                         alt="elisee2005a"
                                          width="40" height="40" class="circle"/>
                                 </a>
                                                     </div>
@@ -513,7 +513,7 @@
          data-episode-id="924421"
          data-series-id="63289"
          data-order-by="best"
-         data-comment-cnt="23">
+         data-comment-cnt="25">
             <header class="comment-header">
             <span class="comment-cnt">Comments</span>
                             <div class="dropdown-wrap mod-abs">
@@ -574,11 +574,11 @@
             <div class="parent-body-wrap">
                 <header class="body-header">
                     <a href="/ellisonmorganwhylov" class="commenter has-link">Elle Morgan</a>
-                                                            <span class="date">5 days ago</span>
+                                                            <span class="date">6 days ago</span>
                                     </header>
                 <div class="comment-txt">&quot;that's some nice looking ass..tragalus&quot;</div>
                 <div class="vote-wrap vote-comment has-reply">
-                    <span class="up-count  ">64</span>
+                    <span class="up-count  ">65</span>
                     <a href="#!/comment/vote/5586992" class="vote-btn upvote-btn have-to-sign
                        " data-constant="1" data-stream-id="comment-5586992" data-comment-id="5586992"
                        data-permalink="https://tapas.io/episode/924421?#episode-comment-924421"                            data-toggle="popover" data-html="true">
@@ -604,7 +604,7 @@
     <div class="body-wrap reply">
         <header class="body-header">
             <a href="/petitepaddingtonbea" class="commenter has-link">petitepaddington</a>
-                                    <span class="date">5 days ago</span>
+                                    <span class="date">6 days ago</span>
                                 </header>
         <div class="comment-txt">*cHOKES*</div>
         <div class="vote-wrap vote-reply">
@@ -628,13 +628,13 @@
                     <div class="reply-stream stream" id="comment-5588404" data-parent-id="5586992">
     <div class="avatar-wrap reply">
         <a class="avatar has-link" href="/ShouyoJonsai">
-            <img src="https://d30womf5coomej.cloudfront.net/ua/15/02562bf0-7be5-4768-911f-7f9c3a2f0d98.jpg" alt="Red Head" width="32" height="32" class="circle"/>
+            <img src="https://d30womf5coomej.cloudfront.net/ua/86/d063ea2e-6930-4ccf-910c-d03bc0c23fce.jpg" alt="Red Head" width="32" height="32" class="circle"/>
         </a>
     </div>
     <div class="body-wrap reply">
         <header class="body-header">
             <a href="/ShouyoJonsai" class="commenter has-link">Red Head</a>
-                                    <span class="date">5 days ago</span>
+                                    <span class="date">6 days ago</span>
                                 </header>
         <div class="comment-txt">Right *Chokes After Having Sip Of Coffee* WAIT! WERE THEY DRINKING.....YELONG TEA! OML DRAGON HUSBANDS IS RELATED TO THIS!!!</div>
         <div class="vote-wrap vote-reply">
@@ -663,9 +663,9 @@
             <a class="load-more-comment txt "
                data-last-id="5586992"
                data-last-reply-id="5588404"
-               data-since-date="1514264329595"
+               data-since-date="1514353304380"
                data-offset="3">
-                <span><span class="num">20</span> more comments</span>
+                <span><span class="num">22</span> more comments</span>
                 <span class="hidden">view more comments</span>
             </a>
 
@@ -697,9 +697,9 @@
                     <div class="right-side">
                         <ul class="ep-extra-info-list">
                             <li class="ep-extra-info">
-                                <i class="sp-ico-stats-views" data-toggle="tooltip" data-title="Views"></i><span class="num" title="6406">6.4k</span>
-                                <i class="sp-ico-stats-likes" data-toggle="tooltip" data-title="Likes"></i><span class="num like" title="1032">1k</span>
-                                <i class="sp-ico-stats-comments" data-toggle="tooltip" data-title="Comments"></i><span class="num" title="23">23</span>
+                                <i class="sp-ico-stats-views" data-toggle="tooltip" data-title="Views"></i><span class="num" title="6570">6.6k</span>
+                                <i class="sp-ico-stats-likes" data-toggle="tooltip" data-title="Likes"></i><span class="num like" title="1044">1k</span>
+                                <i class="sp-ico-stats-comments" data-toggle="tooltip" data-title="Comments"></i><span class="num" title="25">25</span>
                             </li>
                             <li class="ep-extra-info">
                                 <i class="sp-ico-tag"></i>
@@ -917,14 +917,14 @@
                                             
                                         </div>
                                         <ul class="number-status">
-                                            <li class="common-tooltip" data-title="298,227 views" data-placement="right">
+                                            <li class="common-tooltip" data-title="299,214 views" data-placement="right">
                                                 <i class="sp-tab-views-on"></i>
-                                                <span class="cnt-txt">298.2k</span>
+                                                <span class="cnt-txt">299.2k</span>
                                             </li>
                                             <li data-type="subscriber" class="sp-line custom-tooltip"
                                                 data-href="#!/ladypcpx/subscribers?series_id=63289">
                                                 <i class="sp-tab-subs-on"></i>
-                                                <span class="cnt-txt js-cnt">10.3k</span>
+                                                <span class="cnt-txt js-cnt">10.4k</span>
                                             </li>
                                             
                                                 <li data-type="tipper" class="sp-line custom-tooltip"
@@ -1111,11 +1111,11 @@
                             <span class="right">
                                 <span>
                                     <i class="sp-tab-views"></i>
-                                    9.7k
+                                    10.7k
                                 </span>
                                 <span>
                                     <i class="sp-tab-subs"></i>
-                                    1,510
+                                    1,560
                                 </span>
                             </span>
                         </div>
@@ -1154,11 +1154,11 @@
                             <span class="right">
                                 <span>
                                     <i class="sp-tab-views"></i>
-                                    2k
+                                    2.1k
                                 </span>
                                 <span>
                                     <i class="sp-tab-subs"></i>
-                                    81
+                                    85
                                 </span>
                             </span>
                         </div>
@@ -1197,11 +1197,11 @@
                             <span class="right">
                                 <span>
                                     <i class="sp-tab-views"></i>
-                                    22.2k
+                                    23.4k
                                 </span>
                                 <span>
                                     <i class="sp-tab-subs"></i>
-                                    2,506
+                                    2,615
                                 </span>
                             </span>
                         </div>
@@ -1445,13 +1445,13 @@
 
     <img class="da-placeholder hidden" width="300" height="250" src="https://d30womf5coomej.cloudfront.net/resources/images/adslots/adslot-0.png"/>
 
-<iframe class="ad-iframe" id="a580a4d" name="a580a4d"
-        src="/delivery/afr.php?zoneid=167&amp;cb=580a4"
+<iframe class="ad-iframe" id="a45fedd" name="a45fedd"
+        src="/delivery/afr.php?zoneid=167&amp;cb=45fed"
         frameborder="0" scrolling="no"
         width="300"
         height="250">
-    <a href="/delivery/ck.php?n=a580a4d&amp;cb=580a4" target="_blank">
-        <img src="/delivery/avw.php?zoneid=167&amp;cb=580a4&amp;n=a580a4d" border="0" alt="" />
+    <a href="/delivery/ck.php?n=a45fedd&amp;cb=45fed" target="_blank">
+        <img src="/delivery/avw.php?zoneid=167&amp;cb=45fed&amp;n=a45fedd" border="0" alt="" />
     </a>
 </iframe>
 </div>
@@ -1474,13 +1474,13 @@
 
     <img class="da-placeholder hidden" width="300" height="250" src="https://d30womf5coomej.cloudfront.net/resources/images/adslots/adslot-1.png"/>
 
-<iframe class="ad-iframe" id="adf8bed" name="adf8bed"
-        src="/delivery/afr.php?zoneid=22745&amp;cb=df8be"
+<iframe class="ad-iframe" id="a5ff72d" name="a5ff72d"
+        src="/delivery/afr.php?zoneid=22745&amp;cb=5ff72"
         frameborder="0" scrolling="no"
         width="300"
         height="250">
-    <a href="/delivery/ck.php?n=adf8bed&amp;cb=df8be" target="_blank">
-        <img src="/delivery/avw.php?zoneid=22745&amp;cb=df8be&amp;n=adf8bed" border="0" alt="" />
+    <a href="/delivery/ck.php?n=a5ff72d&amp;cb=5ff72" target="_blank">
+        <img src="/delivery/avw.php?zoneid=22745&amp;cb=5ff72&amp;n=a5ff72d" border="0" alt="" />
     </a>
 </iframe>
 </div>
@@ -1503,13 +1503,13 @@
 
     <img class="da-placeholder hidden" width="300" height="250" src="https://d30womf5coomej.cloudfront.net/resources/images/adslots/adslot-2.png"/>
 
-<iframe class="ad-iframe" id="a05fe8d" name="a05fe8d"
-        src="/delivery/afr.php?zoneid=22746&amp;cb=05fe8"
+<iframe class="ad-iframe" id="af221bd" name="af221bd"
+        src="/delivery/afr.php?zoneid=22746&amp;cb=f221b"
         frameborder="0" scrolling="no"
         width="300"
         height="250">
-    <a href="/delivery/ck.php?n=a05fe8d&amp;cb=05fe8" target="_blank">
-        <img src="/delivery/avw.php?zoneid=22746&amp;cb=05fe8&amp;n=a05fe8d" border="0" alt="" />
+    <a href="/delivery/ck.php?n=af221bd&amp;cb=f221b" target="_blank">
+        <img src="/delivery/avw.php?zoneid=22746&amp;cb=f221b&amp;n=af221bd" border="0" alt="" />
     </a>
 </iframe>
 </div>
@@ -1774,14 +1774,14 @@
     var _data = {
         seriesId : 63289,
         episodeId : 924421, // episodeId is empty on empty series
-        episodeList : [{"id":666211,"title":"Chapter 1 Cover","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/44/30b586e7-a285-4063-9f5d-bb304e6bc814.png","publishDate":1492396649000,"scene":1,"orgScene":1,"nsfwKind":"OFF","popularCnt":15612,"thumbsupCnt":779,"shareCnt":0,"commentCnt":20,"publishedDate":"Apr 16","read":false,"isNew":false,"locked":false,"free":true},{"id":673408,"title":"Chapter 1 Page 1","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/39/33e66a4f-8144-47a3-ade4-04b1f13e9a87.png","publishDate":1492972164000,"scene":2,"orgScene":2,"nsfwKind":"OFF","popularCnt":16210,"thumbsupCnt":930,"shareCnt":0,"commentCnt":43,"publishedDate":"Apr 23","read":false,"isNew":false,"locked":false,"free":true},{"id":684027,"title":"Chapter 1 Page 2","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/24/85808715-7f17-4184-9518-71933c941d46.png","publishDate":1493829997000,"scene":3,"orgScene":3,"nsfwKind":"OFF","popularCnt":15347,"thumbsupCnt":952,"shareCnt":0,"commentCnt":32,"publishedDate":"May 03","read":false,"isNew":false,"locked":false,"free":true},{"id":692111,"title":"Chapter 1 Page 3","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/41/4c278808-ad2f-4236-9846-8e872bfea751.png","publishDate":1494436811000,"scene":4,"orgScene":4,"nsfwKind":"OFF","popularCnt":14786,"thumbsupCnt":941,"shareCnt":0,"commentCnt":16,"publishedDate":"May 10","read":false,"isNew":false,"locked":false,"free":true},{"id":699262,"title":"Chapter 1 Page 4","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/ee/72b28076-de9b-4c46-a9db-464ad6a6ab37.jpg","publishDate":1495047093000,"scene":5,"orgScene":5,"nsfwKind":"OFF","popularCnt":14558,"thumbsupCnt":1010,"shareCnt":0,"commentCnt":42,"publishedDate":"May 17","read":false,"isNew":false,"locked":false,"free":true},{"id":706511,"title":"Chapter 1 Page 5","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/46/3a3046a5-4956-419e-a9df-0cc4fa5b98d7.jpg","publishDate":1495651605000,"scene":6,"orgScene":6,"nsfwKind":"OFF","popularCnt":14544,"thumbsupCnt":994,"shareCnt":0,"commentCnt":36,"publishedDate":"May 24","read":false,"isNew":false,"locked":false,"free":true},{"id":721291,"title":"Chapter 1 Page 6","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/7e/c145ab17-e037-48c3-be50-aea3d0b37587.jpg","publishDate":1496866979000,"scene":7,"orgScene":7,"nsfwKind":"OFF","popularCnt":14281,"thumbsupCnt":922,"shareCnt":0,"commentCnt":15,"publishedDate":"Jun 07","read":false,"isNew":false,"locked":false,"free":true},{"id":729532,"title":"Chapter 1 Pages 7-8","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/c7/737d2b57-fe04-4a79-89b5-f054ab347ac5.png","publishDate":1497488775000,"scene":8,"orgScene":8,"nsfwKind":"OFF","popularCnt":14454,"thumbsupCnt":1204,"shareCnt":0,"commentCnt":77,"publishedDate":"Jun 14","read":false,"isNew":false,"locked":false,"free":true},{"id":738000,"title":"Chapter 1 Page 9","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/9d/5e25f0aa-9b4e-4f25-9a9b-bf13b33a3a43.jpg","publishDate":1498178887000,"scene":9,"orgScene":9,"nsfwKind":"OFF","popularCnt":14738,"thumbsupCnt":1054,"shareCnt":8,"commentCnt":37,"publishedDate":"Jun 22","read":false,"isNew":false,"locked":false,"free":true},{"id":751272,"title":"Chapter 1 Pages 10-11","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/c9/e4ab98e1-b45f-43bd-8c9f-0181efe4ba6b.jpg","publishDate":1499276963000,"scene":10,"orgScene":10,"nsfwKind":"OFF","popularCnt":14363,"thumbsupCnt":1304,"shareCnt":1,"commentCnt":144,"publishedDate":"Jul 05","read":false,"isNew":false,"locked":false,"free":true},{"id":759635,"title":"Chapter 1 Pages 12-13","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/5c/119f9868-6c71-48c6-b941-ebe332a330d9.jpg","publishDate":1499914292000,"scene":11,"orgScene":11,"nsfwKind":"OFF","popularCnt":14759,"thumbsupCnt":1241,"shareCnt":0,"commentCnt":67,"publishedDate":"Jul 12","read":false,"isNew":false,"locked":false,"free":true},{"id":775578,"title":"Chapter 1 Pages 14-15","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/9a/a2efeac6-5aca-4d26-9fe0-5c1bfec0de49.jpg","publishDate":1501115896000,"scene":12,"orgScene":12,"nsfwKind":"OFF","popularCnt":14941,"thumbsupCnt":1069,"shareCnt":0,"commentCnt":45,"publishedDate":"Jul 26","read":false,"isNew":false,"locked":false,"free":true},{"id":792190,"title":"Chapter 1 Pages 16-17","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/58/f146ce1b-bb2a-44ab-b16f-4b165f662b5d.jpg","publishDate":1502389890000,"scene":13,"orgScene":13,"nsfwKind":"OFF","popularCnt":14010,"thumbsupCnt":1087,"shareCnt":0,"commentCnt":66,"publishedDate":"Aug 10","read":false,"isNew":false,"locked":false,"free":true},{"id":806807,"title":"Chapter 1 Pages 18-19","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/20/9ef8f036-ed04-4790-a3da-86a6a32cb684.jpg","publishDate":1503615898000,"scene":14,"orgScene":14,"nsfwKind":"OFF","popularCnt":14858,"thumbsupCnt":1256,"shareCnt":0,"commentCnt":181,"publishedDate":"Aug 24","read":false,"isNew":false,"locked":false,"free":true},{"id":856433,"title":"Chapter 1 Pages 20-22","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/84/b64fd84a-1460-4d2c-aaa8-445be1b8aba2.jpg","publishDate":1507780889000,"scene":15,"orgScene":15,"nsfwKind":"OFF","popularCnt":12950,"thumbsupCnt":1277,"shareCnt":0,"commentCnt":77,"publishedDate":"Oct 11","read":false,"isNew":false,"locked":false,"free":true},{"id":870069,"title":"Chapter 1 Page 23","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/7f/73253b37-1b8b-4085-87c6-daa90e69a8a0.jpg","publishDate":1508979694000,"scene":16,"orgScene":16,"nsfwKind":"OFF","popularCnt":12765,"thumbsupCnt":1102,"shareCnt":0,"commentCnt":18,"publishedDate":"Oct 25","read":false,"isNew":false,"locked":false,"free":true},{"id":877249,"title":"Chapter 1 Page 24","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/ea/ad8010b8-eb19-4ed7-9860-4ec386048088.jpg","publishDate":1509594400000,"scene":17,"orgScene":17,"nsfwKind":"OFF","popularCnt":13085,"thumbsupCnt":1190,"shareCnt":0,"commentCnt":92,"publishedDate":"Nov 01","read":false,"isNew":false,"locked":false,"free":true},{"id":891291,"title":"Chapter 1 Page 25 ","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/0f/d87f2bb8-16d2-4ef7-8d0b-808d87ef50ef.jpg","publishDate":1510893349000,"scene":18,"orgScene":18,"nsfwKind":"OFF","popularCnt":12070,"thumbsupCnt":1192,"shareCnt":0,"commentCnt":200,"publishedDate":"Nov 16","read":false,"isNew":false,"locked":false,"free":true},{"id":897421,"title":"Chapter 1 Page 26","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/f9/247bc6e4-671e-4d34-bd76-1664484c72b0.jpg","publishDate":1511473014000,"scene":19,"orgScene":19,"nsfwKind":"OFF","popularCnt":12260,"thumbsupCnt":1113,"shareCnt":0,"commentCnt":37,"publishedDate":"Nov 23","read":false,"isNew":false,"locked":false,"free":true},{"id":903070,"title":"Chapter 1 Page 27","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/d1/d2764332-0339-437f-ad25-46ebe64becc1.jpg","publishDate":1512001916000,"scene":20,"orgScene":20,"nsfwKind":"OFF","popularCnt":11310,"thumbsupCnt":1088,"shareCnt":0,"commentCnt":57,"publishedDate":"Nov 29","read":false,"isNew":false,"locked":false,"free":true},{"id":910611,"title":"Chapter 1 Page 28","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/12/d4c311eb-918a-470d-9888-0248005fccfb.jpg","publishDate":1512618467000,"scene":21,"orgScene":21,"nsfwKind":"OFF","popularCnt":9920,"thumbsupCnt":1188,"shareCnt":0,"commentCnt":46,"publishedDate":"Dec 06","read":false,"isNew":false,"locked":false,"free":true},{"id":924421,"title":"Chapter 1 Page 29","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/47/97c95659-eb7b-49cf-94d7-1bfccfa0b37c.jpg","publishDate":1513831947000,"scene":22,"orgScene":22,"nsfwKind":"OFF","popularCnt":6406,"thumbsupCnt":1032,"shareCnt":0,"commentCnt":23,"publishedDate":"5 days ago","read":false,"isNew":false,"locked":false,"free":true}],
+        episodeList : [{"id":666211,"title":"Chapter 1 Cover","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/44/30b586e7-a285-4063-9f5d-bb304e6bc814.png","publishDate":1492396649000,"scene":1,"orgScene":1,"nsfwKind":"OFF","popularCnt":15647,"thumbsupCnt":782,"shareCnt":0,"commentCnt":20,"publishedDate":"Apr 16","read":false,"isNew":false,"locked":false,"free":true},{"id":673408,"title":"Chapter 1 Page 1","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/39/33e66a4f-8144-47a3-ade4-04b1f13e9a87.png","publishDate":1492972164000,"scene":2,"orgScene":2,"nsfwKind":"OFF","popularCnt":16249,"thumbsupCnt":936,"shareCnt":0,"commentCnt":43,"publishedDate":"Apr 23","read":false,"isNew":false,"locked":false,"free":true},{"id":684027,"title":"Chapter 1 Page 2","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/24/85808715-7f17-4184-9518-71933c941d46.png","publishDate":1493829997000,"scene":3,"orgScene":3,"nsfwKind":"OFF","popularCnt":15381,"thumbsupCnt":956,"shareCnt":0,"commentCnt":32,"publishedDate":"May 03","read":false,"isNew":false,"locked":false,"free":true},{"id":692111,"title":"Chapter 1 Page 3","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/41/4c278808-ad2f-4236-9846-8e872bfea751.png","publishDate":1494436811000,"scene":4,"orgScene":4,"nsfwKind":"OFF","popularCnt":14819,"thumbsupCnt":945,"shareCnt":0,"commentCnt":16,"publishedDate":"May 10","read":false,"isNew":false,"locked":false,"free":true},{"id":699262,"title":"Chapter 1 Page 4","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/ee/72b28076-de9b-4c46-a9db-464ad6a6ab37.jpg","publishDate":1495047093000,"scene":5,"orgScene":5,"nsfwKind":"OFF","popularCnt":14590,"thumbsupCnt":1014,"shareCnt":0,"commentCnt":42,"publishedDate":"May 17","read":false,"isNew":false,"locked":false,"free":true},{"id":706511,"title":"Chapter 1 Page 5","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/46/3a3046a5-4956-419e-a9df-0cc4fa5b98d7.jpg","publishDate":1495651605000,"scene":6,"orgScene":6,"nsfwKind":"OFF","popularCnt":14573,"thumbsupCnt":997,"shareCnt":0,"commentCnt":36,"publishedDate":"May 24","read":false,"isNew":false,"locked":false,"free":true},{"id":721291,"title":"Chapter 1 Page 6","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/7e/c145ab17-e037-48c3-be50-aea3d0b37587.jpg","publishDate":1496866979000,"scene":7,"orgScene":7,"nsfwKind":"OFF","popularCnt":14311,"thumbsupCnt":925,"shareCnt":0,"commentCnt":15,"publishedDate":"Jun 07","read":false,"isNew":false,"locked":false,"free":true},{"id":729532,"title":"Chapter 1 Pages 7-8","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/c7/737d2b57-fe04-4a79-89b5-f054ab347ac5.png","publishDate":1497488775000,"scene":8,"orgScene":8,"nsfwKind":"OFF","popularCnt":14483,"thumbsupCnt":1209,"shareCnt":0,"commentCnt":77,"publishedDate":"Jun 14","read":false,"isNew":false,"locked":false,"free":true},{"id":738000,"title":"Chapter 1 Page 9","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/9d/5e25f0aa-9b4e-4f25-9a9b-bf13b33a3a43.jpg","publishDate":1498178887000,"scene":9,"orgScene":9,"nsfwKind":"OFF","popularCnt":14766,"thumbsupCnt":1058,"shareCnt":8,"commentCnt":37,"publishedDate":"Jun 22","read":false,"isNew":false,"locked":false,"free":true},{"id":751272,"title":"Chapter 1 Pages 10-11","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/c9/e4ab98e1-b45f-43bd-8c9f-0181efe4ba6b.jpg","publishDate":1499276963000,"scene":10,"orgScene":10,"nsfwKind":"OFF","popularCnt":14391,"thumbsupCnt":1310,"shareCnt":1,"commentCnt":144,"publishedDate":"Jul 05","read":false,"isNew":false,"locked":false,"free":true},{"id":759635,"title":"Chapter 1 Pages 12-13","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/5c/119f9868-6c71-48c6-b941-ebe332a330d9.jpg","publishDate":1499914292000,"scene":11,"orgScene":11,"nsfwKind":"OFF","popularCnt":14789,"thumbsupCnt":1246,"shareCnt":0,"commentCnt":67,"publishedDate":"Jul 12","read":false,"isNew":false,"locked":false,"free":true},{"id":775578,"title":"Chapter 1 Pages 14-15","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/9a/a2efeac6-5aca-4d26-9fe0-5c1bfec0de49.jpg","publishDate":1501115896000,"scene":12,"orgScene":12,"nsfwKind":"OFF","popularCnt":14974,"thumbsupCnt":1073,"shareCnt":0,"commentCnt":45,"publishedDate":"Jul 26","read":false,"isNew":false,"locked":false,"free":true},{"id":792190,"title":"Chapter 1 Pages 16-17","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/58/f146ce1b-bb2a-44ab-b16f-4b165f662b5d.jpg","publishDate":1502389890000,"scene":13,"orgScene":13,"nsfwKind":"OFF","popularCnt":14044,"thumbsupCnt":1091,"shareCnt":0,"commentCnt":66,"publishedDate":"Aug 10","read":false,"isNew":false,"locked":false,"free":true},{"id":806807,"title":"Chapter 1 Pages 18-19","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/20/9ef8f036-ed04-4790-a3da-86a6a32cb684.jpg","publishDate":1503615898000,"scene":14,"orgScene":14,"nsfwKind":"OFF","popularCnt":14893,"thumbsupCnt":1260,"shareCnt":0,"commentCnt":181,"publishedDate":"Aug 24","read":false,"isNew":false,"locked":false,"free":true},{"id":856433,"title":"Chapter 1 Pages 20-22","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/84/b64fd84a-1460-4d2c-aaa8-445be1b8aba2.jpg","publishDate":1507780889000,"scene":15,"orgScene":15,"nsfwKind":"OFF","popularCnt":12989,"thumbsupCnt":1282,"shareCnt":0,"commentCnt":77,"publishedDate":"Oct 11","read":false,"isNew":false,"locked":false,"free":true},{"id":870069,"title":"Chapter 1 Page 23","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/7f/73253b37-1b8b-4085-87c6-daa90e69a8a0.jpg","publishDate":1508979694000,"scene":16,"orgScene":16,"nsfwKind":"OFF","popularCnt":12807,"thumbsupCnt":1106,"shareCnt":0,"commentCnt":18,"publishedDate":"Oct 25","read":false,"isNew":false,"locked":false,"free":true},{"id":877249,"title":"Chapter 1 Page 24","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/ea/ad8010b8-eb19-4ed7-9860-4ec386048088.jpg","publishDate":1509594400000,"scene":17,"orgScene":17,"nsfwKind":"OFF","popularCnt":13129,"thumbsupCnt":1194,"shareCnt":0,"commentCnt":92,"publishedDate":"Nov 01","read":false,"isNew":false,"locked":false,"free":true},{"id":891291,"title":"Chapter 1 Page 25 ","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/0f/d87f2bb8-16d2-4ef7-8d0b-808d87ef50ef.jpg","publishDate":1510893349000,"scene":18,"orgScene":18,"nsfwKind":"OFF","popularCnt":12115,"thumbsupCnt":1196,"shareCnt":0,"commentCnt":200,"publishedDate":"Nov 16","read":false,"isNew":false,"locked":false,"free":true},{"id":897421,"title":"Chapter 1 Page 26","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/f9/247bc6e4-671e-4d34-bd76-1664484c72b0.jpg","publishDate":1511473014000,"scene":19,"orgScene":19,"nsfwKind":"OFF","popularCnt":12310,"thumbsupCnt":1117,"shareCnt":0,"commentCnt":37,"publishedDate":"Nov 23","read":false,"isNew":false,"locked":false,"free":true},{"id":903070,"title":"Chapter 1 Page 27","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/d1/d2764332-0339-437f-ad25-46ebe64becc1.jpg","publishDate":1512001916000,"scene":20,"orgScene":20,"nsfwKind":"OFF","popularCnt":11372,"thumbsupCnt":1092,"shareCnt":0,"commentCnt":57,"publishedDate":"Nov 29","read":false,"isNew":false,"locked":false,"free":true},{"id":910611,"title":"Chapter 1 Page 28","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/12/d4c311eb-918a-470d-9888-0248005fccfb.jpg","publishDate":1512618467000,"scene":21,"orgScene":21,"nsfwKind":"OFF","popularCnt":10012,"thumbsupCnt":1192,"shareCnt":0,"commentCnt":47,"publishedDate":"Dec 06","read":false,"isNew":false,"locked":false,"free":true},{"id":924421,"title":"Chapter 1 Page 29","thumbUrl":"https://d30womf5coomej.cloudfront.net/sa/47/97c95659-eb7b-49cf-94d7-1bfccfa0b37c.jpg","publishDate":1513831947000,"scene":22,"orgScene":22,"nsfwKind":"OFF","popularCnt":6570,"thumbsupCnt":1044,"shareCnt":0,"commentCnt":25,"publishedDate":"6 days ago","read":false,"isNew":false,"locked":false,"free":true}],
         isSeriesView : true,
         seriesTitle : 'Camellia',
         saleType: 'FREE',
         isPreLoad : true,
         isNoAD : false,
         isAutoSoundPlay : false,
-        subscribersCount : 10339,
+        subscribersCount : 10372,
         tippersCount: 214,
         openTip: true,
         barCookieName : '',

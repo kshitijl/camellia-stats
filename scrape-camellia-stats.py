@@ -216,8 +216,8 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="Download and parse statistics")
     parser.add_argument('statistics', type=str, nargs='*')
-    parser.add_argument('--webtoons-username', type=str, required=True)
-    parser.add_argument('--webtoons-password', type=str, required=True)
+    parser.add_argument('--username', type=str, required=True)
+    parser.add_argument('--password', type=str, required=True)
 
     def timestamp(t):
         return datetime.datetime.strptime(t, '%Y-%m-%d-%H-%M')
@@ -238,8 +238,8 @@ def main():
         'webtoons': Page(
             retriever=Webtoons_logged_in_retriever(
                 url='http://www.webtoons.com/challenge/titleStat?titleNo=81223',
-                username=args.webtoons_username,
-                password=args.webtoons_password),
+                username=args.username,
+                password=args.password),
             statistics={
                 'subs': Webtoons_statistic(
                     xpath='//*[@id="content"]/div[2]/div[2]/div/div[2]/ul[1]/li[3]/span/text()'),
