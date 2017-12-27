@@ -183,7 +183,7 @@ class Webtoons_logged_in_retriever(object):
     def retrieve(self):
         from splinter import Browser
 
-        with Browser('chrome') as browser:
+        with Browser('chrome', headless=True) as browser:
             browser.visit(self.webtoons_login_url)
 
             username_field = browser.find_by_id("emailId")[0]
