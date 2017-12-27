@@ -25,9 +25,15 @@ def save_content_to_dated_file_in_dir(content, directory, as_of=None):
     if not as_of:
         as_of = datetime.datetime.now()
 
+    if os.path.exists(directory):
+        if not os.path.isdir(directory):
+            raise AttributeError("{} exists but is not a directory".format(directory))
+    else:
+        os.makedirs(directory)
+        
     filename = timestamped_filename(directory, as_of)
     with open(filename, 'w') as output_file:
-        output_file.write(content)
+        output_file.write(content.encode('utf-8'))
 
 def chop_suffix(text, suffix, error_message=None):
     if not pageviews_string.endswith(suffix):

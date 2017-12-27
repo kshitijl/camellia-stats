@@ -1,0 +1,1636 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+
+
+
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
+
+<link rel="shortcut icon" href="http://webtoons.static.naver.net/image/favicon/favicon.ico?dt=2017082301" type="image/x-icon" />
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+
+
+<link rel="stylesheet" type="text/css" href="/compress/release/css/linewebtoon_en_20171220-1218.css" />
+
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="http://connect.facebook.net/signals/config/741449896000061?v=2.8.6&amp;r=stable" async=""></script><script async="" src="//connect.facebook.net/en_US/fbevents.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/js/lib/ga_logger.js"></script>
+<script>
+
+
+
+
+
+GaLogger.init('UA-57082184-1');
+
+
+GaLogger.displayfeatures();
+GaLogger.set('dimension4', 'ENGLISH');
+GaLogger.pageView();
+</script>
+
+
+<script type="text/javascript" src="/js/lib/gak.js"></script>
+<script>
+var gak_SerName = 'gak.webtoons.com';
+gak_do('GLOBAL');
+</script>
+
+
+
+
+<script type="text/javascript" src="/js/lib/facebook_logger.js"></script>
+
+
+
+<script>
+FacebookLogger.init('741449896000061');
+FacebookLogger.pageView();
+</script>
+<noscript>&lt;img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=741449896000061&amp;ev=PageView&amp;noscript=1" /&gt;</noscript>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var ccsrv = 'cc.loginfra.com';
+
+
+	
+	
+	
+	var nsc = "webtoons.all";
+	
+
+
+var nclk_evt = 3;
+var lcs_SerName = 'lcs.naver.com';
+var sNclkLanguageCode = 'en_en';
+</script>
+<title>Dashboard :: LINE WEBTOON</title>
+</head>
+<body class="en">
+
+<div id="wrap">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- skip navigation -->
+<div id="u_skip">
+	<a href="#content" onclick="document.getElementById('content').tabIndex=-1;document.getElementById('content').focus();return false;"><span>skip content</span></a>
+</div>
+<!-- //skip navigation -->
+
+<!-- header -->
+<div id="header">
+	<div class="header_inner">
+		<p class="logo"><a href="http://www.webtoons.com/en/" class="btn_logo N=a:gnb.home,g:en_en">WEBTOON</a></p>
+	<div class="sta">
+		
+			<a href="#" class="lk_publish N=a:gnb.publish,g:en_en" id="btnPublish">Publish</a>
+		
+		
+		<a href="#" class="lk_login" id="btnLogin">Log In</a>
+		
+		<span class="login N=a:gnb.mywebtoon,g:en_en" id="btnLoginInfo" style="display: none;"></span>	
+
+		
+			
+			<div class="ly_loginbox v2 NE=a:log" id="layerMy">
+				<div class="ico_arr v3 up"></div>
+				<div class="loginbox_cont">
+					<p class="t_login">Login</p>
+					<form name="formLogin" id="formLogin" target="_top" autocomplete="off" action="http://www.webtoons.com/member/login/doLoginById" method="post">
+						<input type="hidden" id="loginType" name="loginType" value="EMAIL" />
+						<input type="hidden" id="serviceZone" name="serviceZone" value="GLOBAL" />
+						<input type="hidden" id="encnm" name="encnm" />
+						<input type="hidden" id="encpw" name="encpw" />
+
+						
+						
+							<div class="input_area" id="emailIdArea">
+								
+								<label for="emailId" class="placeholder _placeholder">Email Address</label>
+								<input type="text" id="emailId" class="input_box _userId" maxlength="64" />
+							</div>
+						
+
+						<div class="input_area" id="passwordArea">
+							
+								
+							<label for="password" id="placeholderPassword" class="placeholder">Password</label>
+							<input type="password" id="password" maxlength="16" name="password" class="input_box" />
+						</div>
+						<div class="login_btn">
+							<a href="/member/join?loginType=EMAIL" id="btnSignUp" class="btn_type8 NPI=a:signup">Sign up</a>
+							<a href="#" id="btnLogIn" class="btn_type8 v2 NPI=a:email">Log In</a>
+						</div>
+					</form>
+
+						
+					
+						
+						
+							<a href="/member/password/forgot?loginType=EMAIL" class="lk_forgot_passowrd NPI=a:resetpass" id="btnForgotPassword">Forgot Password?</a>
+						
+					
+						
+
+					<div class="bg_line">
+						<div class="inner">
+							<span class="line_txt">OR Log in with</span>
+						</div>
+					</div>
+					<ul class="login_set">
+						
+							
+							
+								
+									
+								
+								
+								
+								
+								
+							
+							
+								<li><a href="#" title="Login Facebook" class="btn_facebook _btnLoginSns NPI=a:fb,g:en_en" data-type="facebook">Login Facebook</a></li>
+							
+						
+							
+							
+								
+								
+									
+								
+								
+								
+								
+							
+							
+								<li><a href="#" title="Login Twitter" class="btn_twitter _btnLoginSns NPI=a:tw,g:en_en" data-type="twitter">Login Twitter</a></li>
+							
+						
+							
+							
+								
+								
+								
+								
+								
+									
+								
+							
+							
+								<li><a href="#" title="Login Google" class="btn_google _btnLoginSns NPI=a:google,g:en_en" data-type="google">Login Google</a></li>
+							
+						
+							
+							
+								
+								
+								
+								
+								
+									
+								
+							
+							
+								<li><a href="#" title="Login LINE" class="btn_line _btnLoginSns NPI=a:line,g:en_en" data-type="line">Login LINE</a></li>
+							
+						
+					</ul>
+				</div>
+				<a href="#" title="Close" class="btn_clse _btnClose">Close the Login window</a>
+			</div>
+		 
+
+		 
+
+		<span class="bar">|</span>
+		<a href="#" class="btn_search _btnSearch N=a:gnb.search,g:en_en">Search</a>
+		
+		<div class="search_area _searchArea NE=a:sch" style="display:none">
+			<span class="input_box"><input type="text" class="input_search _txtKeyword" /></span>
+			<em class="search_dsc _searchDesc">Search for webtoons or artists</em>
+			<span class="form_area _searchForm">
+						
+						<em class="ico_search _icoSearch">Search</em>
+						
+						<a href="#" class="btn_delete _btnDelete NPI=a:del,g:en_en" style="display: none;">Delete</a>
+						<em class="bar">|</em>
+						<a href="#" class="lk_close _btnClose NPI=a:cancel,g:en_en">Close</a>
+					</span>
+			
+			<ul class="ly_autocomplete _searchLayer" style="display:none">
+			</ul>
+		</div>
+	</div>
+	<p class="blind">MENU</p>
+	
+	<ul class="lnb NE=a:gnb">
+		<li class="m01 "><a href="http://www.webtoons.com/en/dailySchedule" class="NPI=a:daily,g:en_en">Daily Featured</a></li>
+		<li class="m02 "><a href="http://www.webtoons.com/en/genre" class="NPI=a:genre,g:en_en">Genres</a></li>
+		<li class="m03 "><a href="http://www.webtoons.com/en/top" class="NPI=a:toprated,g:en_en">Popular</a></li>
+		
+			<li class="m04 "><a href="http://www.webtoons.com/en/challenge" class="NPI=a:league,g:en_en">Discover</a></li>
+		
+
+		
+		
+	</ul>
+</div>
+</div>
+<!-- //header -->
+<hr />
+
+
+
+
+
+<script type="text/x-handlebars-template" id="searchHistoryListTemplate">
+    &lt;ul class="lst_history"&gt;
+        {{{searchHistoryListHtml}}}
+    &lt;/ul&gt;
+    &lt;div class="autocomplete_foot"&gt;
+        &lt;a href="#" class="_btnDeleteHistory N=a:sch.rdel,g:en_en"&gt;Clear Recent Searches&lt;/a&gt;
+        &lt;/div&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="searchHistoryItemTemplate">
+    &lt;li&gt;&lt;a href="/search?keyword={{keyword}}" class="_searchItem _searchHistory NPI=a:rkw,g:en_en"&gt;{{keyword}}&lt;/a&gt;&lt;/li&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="autoCompleteListTemplate">
+    {{#if isExistsTitleListHtml}}
+    &lt;h3 class="title"&gt;Webtoon&lt;/h3&gt;
+    &lt;ul class="lst_autocomplete"&gt;
+        {{{titleListHtml}}}
+    &lt;/ul&gt;
+    {{/if}}
+    {{#if isExistsAuthorListHtml}}
+    &lt;h3 class="title"&gt;Creator&lt;/h3&gt;
+    &lt;ul class="lst_autocomplete creator"&gt;
+        {{{authorListHtml}}}
+    &lt;/ul&gt;
+    {{/if}}
+    &lt;div class="autocomplete_foot"&gt;
+        &lt;a href="/search?keyword={{keyword}}" class="NPI=a:viewall,g:en_en"&gt;View All&lt;span class="ico_arr9"&gt;&lt;/span&gt;&lt;/a&gt;&lt;span class="right"&gt;&lt;a href="#" class="_btnClose N=a:sch.aclose,g:en_en"&gt;Close&lt;/a&gt;&lt;/span&gt;
+    &lt;/div&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="autoCompleteTitleItemTemplate">
+    &lt;li&gt;
+        &lt;a href="/episodeList?titleNo={{titleNo}}" class="_searchItem _autoComplete NPI=a:akw,g:en_en"&gt;
+            &lt;span class="pic"&gt;&lt;img src="http://webtoon.phinf.naver.net{{mobileThumbnail}}?type=a92" width="37" height="37" alt="{{title}}"&gt;&lt;/span&gt;
+            &lt;p class="subj"&gt;{{{keyword}}}&lt;/p&gt;
+            &lt;p class="info"&gt;&lt;span class="author"&gt;{{authorName}}&lt;/span&gt; &lt;em class="bar"&gt;|&lt;/em&gt; {{representGenre}} &lt;em class="bar"&gt;|&lt;/em&gt; &lt;span class="grade_area"&gt;&lt;span class="ico_grade3"&gt;grade&lt;/span&gt;&lt;em class="grade_num"&gt;{{starScoreAverage}}&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="autoCompleteAuthorItemTemplate">
+    &lt;li&gt;
+        &lt;a href="/search?keyword={{authorName}}" class="_searchItem _autoComplete NPI=a:aartist,g:en_en"&gt;
+            &lt;p class="info"&gt;&lt;span class="author"&gt;{{{keyword}}}&lt;/span&gt; {{{titleNames}}}&lt;/p&gt;
+        &lt;/a&gt;
+    &lt;/li&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="autoCompleteKeywordTemplate">
+    &lt;strong&gt;{{{keyword}}}&lt;/strong&gt;
+</script>
+
+	
+    <div id="container" class="bg NE=a:myd">
+        <div id="content">
+			
+			<div class="snb_wrap my">
+				<div class="snb_inner">
+					<ul class="snb">
+					<li><a href="http://www.webtoons.com/favorite" class="N=a:myw.favorite,g:en_en">SUBSCRIBED</a></li>
+					<li class="on"><a href="#" onclick="return false;">DASHBOARD</a></li>
+					<li><a href="http://www.webtoons.com/en/mycomment" class="N=a:myw.comments,g:en_en">COMMENTS</a></li>
+					<li><a href="http://www.webtoons.com/account" class="N=a:myw.account,g:en_en">ACCOUNT</a></li>
+					</ul>
+				</div>
+			</div>
+			
+
+			
+			<h2 class="blind">Dashboard</h2>
+		
+			<div class="card_wrap my NE=a:mys">
+				<div class="sub_title_wrap">
+					<div class="right">
+						<a href="http://www.webtoons.com/challenge/dashboard" "="" class="btn_backtoseries NPI=a:goback"><span class="ico_arr13"></span>Go back to Series List</a>
+					</div>
+				</div>
+				<ul class="dashboard_lst episode">
+					<li>
+					
+						
+					
+					
+					
+	                    <a href="http://www.webtoons.com/en/challenge/camellia/list?title_no=81223">
+	                    	<img src="http://webtoon.phinf.naver.net/20170609_197/14969565156486WsEp_JPEG/c76e7690-b450-4110-b8ed-952ba70952cf.jpg?type=q90" width="100%" height="100%" alt="" />
+	                    </a>
+	                    <div class="info">
+							<a href="http://www.webtoons.com/en/challenge/camellia/list?title_no=81223">
+								<p class="genre g_fantasy">Fantasy</p>
+							</a>
+							
+							<a href="http://www.webtoons.com/en/challenge/camellia/list?title_no=81223">
+								<p class="genre g_romance">Romance</p>
+							</a>
+							
+		                    
+							<p class="subj">
+		                    	<span>
+		                    		<a href="http://www.webtoons.com/en/challenge/camellia/list?title_no=81223">Camellia</a>
+		                    	</span>
+		                    </p>
+							<p class="grade_area"><span class="ico_like3">like</span><em class="grade_num">29,733</em></p>
+	                        <div class="absolute">
+	                            <p class="update">Updated Dec 20, 2017</p>
+	                            <div class="btnbox">
+	                                <a href="http://www.webtoons.com/challenge/episode?titleNo=81223" class="btn_type3 NPI=a:addepisode"><span class="ico_plus">+</span>Add episode</a>
+	                            </div>
+	                        </div>
+							<div class="manage">
+								<a href="http://www.webtoons.com/challenge/series?titleNo=81223" class="ico_edit NPI=a:sedit">Edit</a>
+								<a href="#" class="ico_delete NPI=a:sdel" id="btnShowSeriesDeleteLayer">Delete</a>
+								
+								<div class="ly_area ly_delete" id="seriesDeleteLayer">
+									<span class="ly_cont">Do you want to delete<br />this webtoon?</span>
+									<span class="ico_arr v2 up"></span>
+	
+									<div class="ly_btn">
+										<a href="#none" title="Cancel" class="btn_bx" id="btnCloseSeriesDeleteLayer">Cancel</a>
+										<a href="#none" title="OK" class="btn_bx" id="btnSeriesDelete" data-title-no="81223">OK</a>
+									</div>
+								</div>
+							</div>
+	                    </div>
+					</li>
+				</ul>
+
+				<div class="detail_body stat">
+					<div class="stat_cont">
+						<div class="stat_header">
+							<h3 class="tit">Statistics : See how much people love your work</h3>
+							<span class="update_date">UPDATED ON 17.12.26 AT 00:01 (EST)</span>
+						</div>
+						<div class="stat_info">
+							<ul class="stat_lst">
+							<li class="col1">
+								<p><span class="ico_chart"></span>Overall</p>
+							</li>
+							<li class="col2">
+								<span class="num">20</span><p>Updates</p>
+							</li>
+							<li class="col3">
+								<span class="num">17,165</span><p>Subscribers</p>
+							</li>
+							</ul>
+							<ul class="stat_lst">
+							<li class="col1">
+								<p><span class="ico_calendar"></span>This month<br />(<span>2017.11</span>)</p>
+							</li>
+							<li class="col2">
+								<span class="num">2</span><p>Monthly Updates</p>
+							</li>
+							<li class="col3">
+								<span class="num">114,052</span><p>Monthly PVs (US region)</p>
+							</li>
+							<li class="col4">
+								<span class="num">1,952</span><p>Yesterday PVs (US region)</p>
+							</li>
+							<li class="col5">
+								<span class="num">57,026</span><p>Average PVs / Update</p>
+							</li>
+							</ul>
+
+							
+							<ul class="stat_lst last">
+							<li class="col1">
+								<p><span class="ico_calendar2"></span>Last month<br />(<span>2017.10</span>)</p>
+							</li>
+							<li class="col2">
+								<span class="num">3</span><p>Monthly Updates</p>
+							</li>
+							<li class="col3">
+								<span class="num">111,914</span><p>Monthly PVs (US region)</p>
+							</li>
+							<li class="col4">
+								<span class="num">37,304</span><p>Average PVs / Update</p>
+							</li>
+							</ul>
+							
+						</div>
+						
+						
+						<a href="#" id="seeDetail" class="lk_stat_bonus NPI=a:seedetails">
+							<span class="ico_arr19"></span>
+						</a>
+					</div>
+				</div>
+			
+				<div class="detail_body stat">
+					<div class="stat_cont">
+						<div class="stat_header">
+							<h3 class="tit">Estimated Webtoon’s Pledge</h3>
+							<span class="update_date">UPDATED ON 17.12.26 AT 00:01 (EST)</span>
+						</div>
+						<div class="pledge_area">
+							<table class="pledge_tbl">
+							<thead>
+								<tr>
+									<td colspan="6">
+										<img src="http://webtoon.phinf.naver.net/20170609_197/14969565156486WsEp_JPEG/c76e7690-b450-4110-b8ed-952ba70952cf.jpg?type=q90" width="54" height="54" alt="" />
+										<span class="tit">Camellia</span>
+										
+											
+										<span class="badge_eligible">ELIGIBLE</span>
+											
+											
+										
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" style="width:329px">Monthly Updates</td>
+									<td colspan="2">Total Subscribers</td>
+									<td colspan="2">US PVs per update</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td id="_episode_eligible" rowspan="6" colspan="2" class="on">2+ episodes</td>
+									<td>20K+</td>
+									<td id="_subscriber_500">$500</td>
+									<td class="on">50K+</td>
+									<td id="_pvs_500" class="on">$500</td>
+								</tr>
+								<tr>
+									<td class="on">15K+</td>
+									<td id="_subscriber_400" class="on">$400</td>
+									<td>40K+</td>
+									<td id="_pvs_400">$400</td>
+								</tr>
+								<tr>
+									<td>10K+</td>
+									<td id="_subscriber_300">$300</td>
+									
+									<td>30K+</td>
+									<td id="_pvs_300">$300</td>
+								</tr>
+								<tr>
+									<td>7K+</td>
+									<td id="_subscriber_200">$200</td>
+									<td>20K+</td>
+									<td id="_pvs_200">$200</td>
+								</tr>
+								<tr>
+									<td>5K+</td>
+									<td id="_subscriber_100">$100</td>
+									<td>10K+</td>
+									<td id="_pvs_100">$100</td>
+								</tr>
+								<tr>
+									<td>3K+</td>
+									<td id="_subscriber_0">$0</td>
+									<td>5K+</td>
+									<td id="_pvs_0">$0</td>
+								</tr>
+								<tr>
+									<td id="_episode_not_eligible" colspan="2">0-1 episodes</td>
+									<td>Under 3K</td>
+									<td id="_subscriber_not_eligible"><span class="ico_diagonal_line"></span></td>
+									<td>Under 5K</td>
+									<td id="_pvs_not_eligible"><span class="ico_diagonal_line"></span></td>
+								</tr>
+								<tr>
+									<td colspan="6" class="on">
+									
+									
+									The currently estimated amount of Webtoon Pledge for this month is <strong>$900</strong>
+									 
+									
+									
+									</td>
+								</tr>
+							</tbody>
+							</table>
+							<p class="guide_dsc">If you have more than one qualified series on Discover, Webtoon will pledge to the highest performing series.</p>
+						</div>
+					</div>
+				</div>
+	        </div>
+	        <div class="ranking_lst my">
+				
+				
+				
+
+
+
+
+					<div class="left_area NE=a:mgt" id="genreRanking">
+						<div class="title_area">
+							<h2><a href="#" class="_rankingMoveBtn NPI=a:more,g:en_en">Most Popular by Genre</a> <em class="ico_arr1">&gt;</em></h2>
+							<div class="sort_area _filterArea">
+								<a href="#" class="checked NPI=a:sort,g:en_en">Action/Fantasy <span class="ico_chk">(selected)</span></a>
+								
+								<ul class="sort_box _filterLayer">
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:byall,g:en_en" data-filter="ALL">ALL</a></li>
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:byact,g:en_en" data-filter="ACTION_FANTASY">Action/Fantasy <span class="ico_chk">(selected)</span></a></li>
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:byrom,g:en_en" data-filter="ROMANCE_DRAMA">Romance/Drama</a></li>
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:bycom,g:en_en" data-filter="COMEDY">Comedy</a></li>
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:bylife,g:en_en" data-filter="SLICE_OF_LIFE">Slice of life</a></li>
+								
+								
+									<li><a href="#" class="_filterItem NPI=a:byothers,g:en_en" data-filter="OTHERS">Others</a></li>
+								
+								</ul>
+							</div>
+						</div>
+						<ul class="lst_type1 _titleListArea">
+						
+							<li>
+								<a href="http://www.webtoons.com/en/fantasy/winter-moon/list?title_no=1093" class="NPI=a:list,i:1093,r:1,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n1">1</span><img src="http://webtoon.phinf.naver.net/20170711_229/1499728678828GoFAK_JPEG/11_EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_fantasy">Fantasy</p>
+										<p class="subj">Winter Moon</p>
+										<p class="author">R. Merryweather / MAYUI</p>
+									</div>
+								</a>
+							</li>
+						
+							<li>
+								<a href="http://www.webtoons.com/en/fantasy/phantom-paradise/list?title_no=1250" class="NPI=a:list,i:1250,r:2,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n2">2</span><img src="http://webtoon.phinf.naver.net/20171214_22/1513231186787Jnl8I_JPEG/11_EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_fantasy">Fantasy</p>
+										<p class="subj">Phantom Paradise</p>
+										<p class="author">Rurisen (L. Zhu)</p>
+									</div>
+								</a>
+							</li>
+						
+							<li>
+								<a href="http://www.webtoons.com/en/fantasy/steam-dragon-express/list?title_no=1270" class="NPI=a:list,i:1270,r:3,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n3">3</span><img src="http://webtoon.phinf.naver.net/20171220_15/1513740298873wcLwn_JPEG/11_EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_fantasy">Fantasy</p>
+										<p class="subj">The Steam Dragon Express</p>
+										<p class="author">R. Merryweather / Por</p>
+									</div>
+								</a>
+							</li>
+						
+						</ul>
+					</div>
+					<div class="right_area NE=a:mdt" id="ageRanking">
+						<div class="title_area">
+							<h2><a href="#" class="_rankingMoveBtn NPI=a:more,g:en_en">Most Popular by Age Group</a> <em class="ico_arr1">&gt;</em></h2>
+							<div class="sort_area _filterArea">
+								<a href="#" class="checked NPI=a:sort,g:en_en">Males in 10's <span class="ico_chk">(selected)</span></a>
+								<ul class="sort_box _filterLayer">
+								
+									<li><a href="#" class="_filterItem NPI=a:bym10,g:en_en" data-filter="MALE10">Males in 10's <span class="ico_chk">(selected)</span></a></li>
+								
+									<li><a href="#" class="_filterItem NPI=a:byf10,g:en_en" data-filter="FEMALE10">Females in 10's</a></li>
+								
+									<li><a href="#" class="_filterItem NPI=a:bym20,g:en_en" data-filter="MALE20">Males in 20's</a></li>
+								
+									<li><a href="#" class="_filterItem NPI=a:byf20,g:en_en" data-filter="FEMALE20">Females in 20's</a></li>
+								
+									<li><a href="#" class="_filterItem NPI=a:bym30,g:en_en" data-filter="MALE30">Males in 30's</a></li>
+								
+									<li><a href="#" class="_filterItem NPI=a:byf30,g:en_en" data-filter="FEMALE30">Females in 30's</a></li>
+								
+								</ul>
+							</div>
+						</div>
+						<ul class="lst_type1 _titleListArea">
+						
+							<li>
+								<a href="http://www.webtoons.com/en/romance/super-secret/list?title_no=666" class="NPI=a:list,i:666,r:1,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n1">1</span><img src="http://webtoon.phinf.naver.net/20160429_96/1461910584575MvkPJ_JPEG/EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_romance">Romance</p>
+										<p class="subj">Super Secret</p>
+										<p class="author">eon</p>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a href="http://www.webtoons.com/en/romance/letsplay/list?title_no=1218" class="NPI=a:list,i:1218,r:2,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n2">2</span><img src="http://webtoon.phinf.naver.net/20171107_204/15100036714483rTut_JPEG/11_EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_romance">Romance</p>
+										<p class="subj">Let's Play</p>
+										<p class="author">Mongie</p>
+									</div>
+								</a>
+							</li>
+							
+							<li>
+								<a href="http://www.webtoons.com/en/fantasy/winter-moon/list?title_no=1093" class="NPI=a:list,i:1093,r:3,g:en_en">
+									<div class="pic_area"><span class="num_ranking ico_n3">3</span><img src="http://webtoon.phinf.naver.net/20170711_229/1499728678828GoFAK_JPEG/11_EC8DB8EB84A4EC9DBC_mobile.jpg?type=a92" alt="" width="92" height="98" /></div>
+									<div class="info_area">
+										<p class="genre g_fantasy">Fantasy</p>
+										<p class="subj">Winter Moon</p>
+										<p class="author">R. Merryweather / MAYUI</p>
+									</div>
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+			</div>
+        </div>
+    </div>
+	
+	<hr />
+	<div id="ly_patron_guide_dim" class="ly_dim">
+		<div class="bg"></div>
+ 	</div>
+	
+	
+	
+	<div id="ly_patron_guide" class="ly_wrap fixed">
+		<div class="ly_box">
+			<div class="ly_patron_guide">
+				<a href="#" class="btn_close"></a>
+				<div id="patron_scrollbox" class="patron_guide_cont">
+					<div class="scrollbar-box">
+						<div class="scrollbar-content">
+							<div class="patron_inner">
+								<h3>What is Patreon?</h3>
+								<p>Patreon is a way for creators to earn ongoing funding directly from their fans via crowd<br />-funding. Learn more about Patreon here : <a target="_blank" href="http://www.patreon.com" class="lk_patron">http://www.patreon.com</a></p>
+								<h3>Why should I register my Patreon ID on LINE WEBTOON?</h3>
+								<p>LINE WEBTOON and Patreon are now partnering to bring all Discover creators a new	investment program and integration. Registering Patreon ID on LINE WEBTOON will enable creators to link their Patreon accounts to their series on LINE WEBTOON and let readers pledge directly.</p>
+								<p>On top of it, Webtoon will also directly pledge to Discover creators who satisfy the	qualifying events listed below.</p>
+								<h3>How can I make Webtoon pledge to me?</h3>
+								<p>Starting August 1st of 2016, Webtoon will directly pledge every month until July 2017, to creators who meet the requirements below: </p>
+								<ul>
+								<li>- Update at least twice a month</li>
+								<li>- Have 3k+ Subscribers</li>
+								<li>- Have 5k US monthly page views / update</li>
+								</ul>
+								<p class="guide_dsc">If you have more than one qualified series on Discover, Webtoon will pledge to the highest performing series.</p>
+								<p class="tbl_dsc">Please refer to table below for pledge qualifications</p>
+								<table class="pledge_tbl">
+								<thead>
+								<tr>
+								<td colspan="2">Monthly Updates</td>
+								<td colspan="2">Total Subscribers</td>
+								<td colspan="2">US PVs per update</td>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+								<td rowspan="6" colspan="2">2+ episodes<span class="badge_eligible">ELIGIBLE</span></td>
+								<td>20K+</td>
+								<td>$500</td>
+								<td>50K+</td>
+								<td>$500</td>
+								</tr>
+								<tr>
+								<td>15K+</td>
+								<td>$400</td>
+								<td>40K+</td>
+								<td>$400</td>
+								</tr>
+								<tr>
+								<td>10K+</td>
+								<td>$300</td>
+								<td>30K+</td>
+								<td>$300</td>
+								</tr>
+								<tr>
+								<td>7K+</td>
+								<td>$200</td>
+								<td>20K+</td>
+								<td>$200</td>
+								</tr>
+								<tr>
+								<td>5K+</td>
+								<td>$100</td>
+								<td>10K+</td>
+								<td>$100</td>
+								</tr>
+								<tr>
+								<td>3K+</td>
+								<td>$0</td>
+								<td>5K+</td>
+								<td>$0</td>
+								</tr>
+								<tr class="before_episodes">
+								<td colspan="2">0-1 episodes<span class="badge_eligible not">NOT ELIGIBLE</span></td>
+								<td>Under 3K</td>
+								<td><span class="ico_diagonal_line"></span></td>
+								<td>Under 5K</td>
+								<td><span class="ico_diagonal_line"></span></td>
+								</tr>
+								</tbody>
+								</table>
+								<p class="guide_dsc v2">Ex) 20k+ Subscribers AND 30k+ US pvs per update = $800 Webtoon’s Pledge ($500+$300)</p>
+								<h3>For more inquiries?</h3>
+								<p class="email_dsc">Please contact us at <a href="mailto:dl_patreon@navercorp.com">dl_patreon@navercorp.com</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<span class="ly_alignbox"></span>
+	</div>
+
+	
+	
+
+
+
+	<!-- footer -->
+	<div id="footer" class="NE=a:fot">
+		<!-- notice -->
+		<div class="notice_area" id="noticeArea" style="display: none;"></div>
+		<!-- //notice -->
+		<div class="foot_app">
+			<div class="foot_cont">
+				<span class="ico_qrcode">WEBTOON</span>
+				<div class="foot_down_msg">
+					<p class="txt">Continue reading this comic on your bed<br />Download the Mobile App</p>
+					<a href="https://play.google.com/store/apps/details?id=com.naver.linewebtoon&amp;referrer=utm_source%3Dlinewebtoon%26utm_medium%3Dmobileweb" target="_blank" class="btn_google NPI=a:android,g:en_en">GET IT on Google Play</a>
+					<a href="https://itunes.apple.com/app/line-webtoon/id894546091?mt=8" target="_blank" class="btn_ios NPI=a:ios,g:en_en">Download on the App Store</a>								
+				</div>
+	        
+			</div>
+		</div>
+	
+		<ul class="foot_sns">
+		
+			<li><a href="https://www.facebook.com/LINEWEBTOON/" target="_blank" class="btn_foot_facebook">facebook</a></li>
+		
+			<li><a href="https://www.instagram.com/linewebtoon/" target="_blank" class="btn_foot_instagram">instagram</a></li>
+		
+			<li><a href="https://twitter.com/linewebtoon" target="_blank" class="btn_foot_twitter">twitter</a></li>
+		
+			<li><a href="https://www.pinterest.com/line_webtoon/" target="_blank" class="btn_foot_pinterest">pinterest</a></li>
+		
+			<li><a href="https://www.youtube.com/user/linewebtoon" target="_blank" class="btn_foot_youtube">youtube</a></li>
+		
+		</ul>
+	
+		<ul class="foot_menu _footer">
+		
+		<li><a href="http://www.webtoons.com/en/about" class="N=a:fot.about,g:en_en">About</a></li>
+		<li class="bar">|</li>
+		
+		
+		
+		
+		
+		<li><a href="https://m.help.naver.com/support/inquiry/input.nhn?serviceNo=9732&amp;categoryNo=13215&amp;lang=en" rel="nofollow" class="_linkFeedback">Feedback</a></li>
+		<li class="bar">|</li>
+		<li><a href="https://help.naver.com/support/service/main.nhn?serviceNo=10541&amp;lang=en" rel="nofollow" class="N=a:fot.help,g:en_en" target="_blank">Help</a></li>
+		<li class="bar">|</li>
+		<li><a href="http://www.webtoons.com/en/terms" class="NPI=a:tos,g:en_en">Terms</a></li>
+		<li class="bar">|</li>
+			<li><a href="http://www.webtoons.com/en/terms#privacyPolicy" class="NPI=a:privacy,g:en_en" onclick="goPrivacy()">Privacy</a></li>
+		
+		<li class="bar">|</li>
+		<li class="language NE=a:set" id="languageArea">
+			<a href="#" class="lk_lang _selectedLanguage NPI=a:contlg,g:en_en"><span>English</span><span class="ico_lang_arr">English</span></a>
+			<ul class="ly_lang _languageList">
+			
+			<li class="on"><a href="#" class="ver_en _en _language NPI=a:contenglish" data-content-language="en" data-locale="en">English<span class="ico_lang_arr2"></span></a></li>
+			<li><a href="#" class="ver_tw _zh-hant _language NPI=a:tradchinese,g:en_en" data-content-language="zh-hant" data-locale="zh_TW">中文 (繁體)</a></li>
+			<li><a href="#" class="ver_cn _zh-hans _language NPI=a:simpchinese,g:en_en" data-content-language="zh-hans" data-locale="zh_CN">中文 (简体)</a></li>
+			<li><a href="#" class="ver_th _th _language NPI=a:contth,g:en_en" data-content-language="th" data-locale="th_TH">ภาษาไทย</a></li>
+			<li><a href="#" class="ver_id _id _language NPI=a:contid,g:en_en" data-content-language="id" data-locale="id">Indonesia</a></li>
+			</ul>
+		</li>
+		
+		</ul>
+		<!-- copyright -->
+		<p class="copyright">© NAVER WEBTOON CORP.</p>
+		
+		<!-- status bar -->
+		<div class="status_bar _statusBar status_en">
+		</div>
+
+
+
+
+<script type="text/template" id="tplStatusBarLogined">
+			&lt;a href="#" class="txt_btn_status"&gt;EVENT&lt;/a&gt;
+			&lt;div id="ly_status2" class="ly_status"&gt;
+				&lt;p class="dsc"&gt;SF Comics Contest&lt;br&gt;User Event in Progress&lt;br&gt;
+
+
+					&lt;span class="score"&gt;&lt;em&gt;This week&lt;span class="_txtWeeklyPoint"&gt;{=pointInfo.weeklyPoint}&lt;/span&gt;&lt;/em&gt; / Total&lt;span class="_txtTotalPoint"&gt;{=pointInfo.totalPoint}&lt;/span&gt; &lt;/span&gt;
+
+				&lt;/p&gt;
+				&lt;div class="status"&gt;&lt;span class="status_fill _gauge" style="width:{=(100*pointInfo.weeklyPoint/pointInfo.maxPoint)}%"&gt;&lt;/span&gt;&lt;/div&gt;
+				&lt;p class="status_num"&gt;&lt;em class="num"&gt;0&lt;/em&gt;&lt;span class="blind"&gt; / &lt;/span&gt;&lt;span class="total _txtMaxPoint"&gt;{=pointInfo.maxPoint}&lt;/span&gt;&lt;/p&gt;
+				&lt;a href="#" class="btn_ly_close2"&gt;close&lt;/a&gt;
+				&lt;span class="ico_arr17"&gt;&lt;/span&gt;
+			&lt;/div&gt;
+</script>
+<script type="text/template" id="tplStatusBar">
+			&lt;a href="#" class="txt_btn_status"&gt;EVENT&lt;/a&gt;
+		    &lt;div id="ly_status1" class="ly_status"&gt;
+		        &lt;p class="dsc"&gt;SF Comics Contest&lt;br&gt;&lt;span&gt;User Event in Progress&lt;/span&gt;&lt;/p&gt;
+		        &lt;div class="btnarea"&gt;&lt;a href="#" class="btn_login" onclick="Util.goLogin(); return false;"&gt;Sign In&lt;span class="ico_arr16"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
+		        &lt;a href="#" class="btn_ly_close2"&gt;close&lt;/a&gt;
+		        &lt;span class="ico_arr17"&gt;&lt;/span&gt;
+		    &lt;/div&gt;
+</script>
+
+
+
+<script type="text/template" id="tplPrizePopup">
+    &lt;div class="ly_dim on _rewardLayerPopupDim" style="display:block;"&gt;
+        &lt;div class="bg"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+	&lt;div id="layer1" class="ly_wrap fixed on _rewardLayerPopup" style="display:block"&gt;
+        &lt;div class="ly_box"&gt;
+            &lt;div class="ly_winner"&gt;
+                &lt;div class="winner_cont"&gt;
+                    &lt;h2&gt;Congratulations !&lt;/h2&gt;
+
+
+					&lt;p class="gift01 {if prizeType == 'WEEKLY'}on{/if}"&gt;You won Girls of the Wild's figures for participating in the user event! Please fill in your information to claim the prize.&lt;/p&gt;
+					&lt;p class="gift02 {if prizeType == 'LUCKY'}on{/if}"&gt;You won Nobless Notebooks for participating in the user event! Please fill in your information to claim the prize&lt;/p&gt;
+
+
+                    &lt;label for="winner_name" class="placeholder"&gt;Name&lt;/label&gt;
+                    &lt;input type="text" id="winner_name" class="input_txt winner_name"&gt;
+                    &lt;label for="winner_addr" class="placeholder"&gt;Address&lt;/label&gt;
+                    &lt;textarea cols="30" rows="3" id="winner_addr" class="txtarea winner_addr"&gt;&lt;/textarea&gt;
+                    &lt;label for="winner_phone" class="placeholder"&gt;Mobile Phone Number&lt;/label&gt;
+                    &lt;input type="text" id="winner_phone" class="input_txt winner_phone"&gt;
+
+                    &lt;p&gt;&lt;/p&gt;
+
+
+					&lt;p class="term_chk"&gt;
+						&lt;span class="chk_area"&gt;
+							&lt;input type="checkbox" name="" id="chk_term" class="input_chk"&gt;
+							&lt;label for="chk_term" class="ico_chkbox"&gt;&lt;span class="blind"&gt;check&lt;/span&gt;&lt;/label&gt;
+						&lt;/span&gt;
+						I agree to the LINE WEBTOON&lt;a href="http://www.webtoons.com/en/terms#privacyPolicy" target="_blank" class="lk_policy"&gt;Privacy Policy&lt;/a&gt;
+					&lt;/p&gt;
+
+                    &lt;p&gt;
+                        &lt;span class="chk_area"&gt;
+                            &lt;input type="checkbox" name="" id="chk_term2" class="input_chk"&gt;
+                            &lt;label for="chk_term2" class="ico_chkbox"&gt;&lt;span class="blind"&gt;&lt;span class="blind"&gt;check&lt;/span&gt;&lt;/label&gt;
+                        &lt;/span&gt;
+                        
+	                &lt;/p&gt;
+                    &lt;a href="#" class="lk_win_submitwrap lk_win_submit _btnSubmit"&gt;ADMIT&lt;/a&gt;
+                    &lt;a href="#" class="lk_win_close _btnClose"&gt;Close layer&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class="ly_alignbox"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!-- //당첨자 팝업 --&gt;
+&lt;/div&gt;
+</script>
+
+		<!-- //status bar -->
+	</div>
+	<!-- //footer -->
+<script type="text/javascript">
+function goPrivacy() {
+	var currentLocation = window.location.href;
+	var termsAndPrivacyUrl = "http://www.webtoons.com/en/terms";
+	
+	if(currentLocation.match(termsAndPrivacyUrl)) {
+		window.location.reload(true);
+	}
+}
+</script>
+
+	
+	
+	
+
+
+
+<script type="text/javascript" src="/compress/release/js/commonScript_20171220-1218.js" charset="utf-8"></script>
+
+
+
+
+
+
+
+
+
+<script type="text/x-handlebars-template" id="tplLoginLayer">
+    &lt;div class="ly_wrap NE=a:log"&gt;
+        
+        
+            &lt;div class="ly_loginbox v2 bg_wh"&gt;
+					&lt;span class="ani_login{{#if isAuthorPublishLogin}} v2{{/if}}"&gt;
+					{{#if isAuthorPublishLogin}}&lt;a href="http://www.webtoons.com/en/about_featured" class="lk_about"&gt;LINE WEBTOON is publishing made easy! Learn more&lt;/a&gt;{{/if}}
+					&lt;/span&gt;
+                &lt;div class="loginbox_cont"&gt;
+                    {{#if isAuthorPublishLogin}}
+                    &lt;p class="t_login v2"&gt;Sign in now to reach&lt;br&gt;new readers around the globe!&lt;/p&gt;
+                    {{else}}
+                    &lt;p class="t_login"&gt;Log in and enjoy special features.&lt;/p&gt;
+                    {{/if}}
+
+                    &lt;form name="formLogin" id="formLogin" target="_top" autocomplete="off" action="http://www.webtoons.com/member/login/doLoginById" method="post"&gt;
+                        &lt;input type="hidden" id="loginType" name="loginType" value="EMAIL"/&gt;
+                        &lt;input type="hidden" id="serviceZone" name="serviceZone" value="GLOBAL"/&gt;
+                        &lt;input type="hidden" id="encnm" name="encnm" /&gt;
+                        &lt;input type="hidden" id="encpw" name="encpw" /&gt;
+                        &lt;input type="hidden" id="returnUrl" name="returnUrl" value=""/&gt;
+
+                        
+                        
+                            &lt;div class="input_area" id="emailIdArea" }&gt;
+                                
+                                &lt;label for="emailId" class="placeholder _placeholder"&gt;Email Address&lt;/label&gt;
+                                &lt;input type="text" id="emailId" class="input_box _userId"  maxlength="64"&gt;
+                            &lt;/div&gt;
+                        
+
+                        &lt;div class="input_area" id="passwordArea"&gt;
+                            
+                                
+                            &lt;label for="password" id="placeholderPassword"class="placeholder"&gt;Password&lt;/label&gt;
+                            &lt;input type="password" id="password" maxlength="16" name="password" class="input_box"&gt;
+                        &lt;/div&gt;
+                        &lt;div class="login_btn"&gt;
+                            &lt;a href="/member/join?loginType=EMAIL" id="btnSignUp" class="btn_type8 NPI=a:signup"&gt;Sign up&lt;/a&gt;
+                            &lt;a href="#" id="btnLogIn" class="btn_type8 v2 NPI=a:email"&gt;Log In&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/form&gt;
+
+                        
+                    
+                        
+                        
+                            &lt;a href="/member/password/forgot?loginType=EMAIL" class="lk_forgot_passowrd NPI=a:resetpass" id="btnForgotPassword"&gt;Forgot Password?&lt;/a&gt;
+                        
+                    
+                        
+
+                    &lt;div class="bg_line"&gt;
+                        &lt;div class="inner"&gt;
+                            &lt;span class="line_txt"&gt;OR Log in with&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;ul class="login_set"&gt;
+                        
+                            
+                            
+                                &lt;li&gt;&lt;a href="#" title="Login Facebook" class="btn_facebook _btnLoginSns NPI=a:fb,g:en_en" data-type="facebook"&gt;Login Facebook&lt;/a&gt;&lt;/li&gt;
+                            
+                        
+                            
+                            
+                                &lt;li&gt;&lt;a href="#" title="Login Twitter" class="btn_twitter _btnLoginSns NPI=a:tw,g:en_en" data-type="twitter"&gt;Login Twitter&lt;/a&gt;&lt;/li&gt;
+                            
+                        
+                            
+                            
+                                &lt;li&gt;&lt;a href="#" title="Login Google" class="btn_google _btnLoginSns NPI=a:google,g:en_en" data-type="google"&gt;Login Google&lt;/a&gt;&lt;/li&gt;
+                            
+                        
+                            
+                            
+                                &lt;li&gt;&lt;a href="#" title="Login LINE" class="btn_line _btnLoginSns NPI=a:line,g:en_en" data-type="line"&gt;Login LINE&lt;/a&gt;&lt;/li&gt;
+                            
+                        
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;a href="#" title="Close" class="btn_clse2 _btnClose"&gt;Close the Login window&lt;/a&gt;
+            &lt;/div&gt;
+        
+
+        
+        &lt;span class="ly_alignbox"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+</script>
+
+<script type="text/javascript">
+	window.recentBarPromise = $.Deferred();
+	$(function() {
+		// 최근본 웹툰 바가 필요 없는경우에만 window.needRecentBar=false 로 설정함
+		if(typeof window.needRecentBar == 'undefined' || window.needRecentBar == true) {
+			window.recentBarPromise.resolve(new RecentBar({
+				imgDomain : 'http://webtoon.phinf.naver.net',
+				language : 'en',
+				title : 'Recently viewed',
+				domain : 'www.webtoons.com',
+				contentLanguage : 'en'
+			}));
+		}
+
+		// 언어선택 함수
+		var changeLanguageFunction = function(element) {
+			var selected = $(element);
+			if(selected.data('content-language') == 'zh-hans') {
+				window.open('https://www.dongmanmanhua.cn');
+				return;
+			}
+			Cookies.set('contentLanguage', selected.data('content-language'), {expires : 365, domain : 'webtoons.com'});
+			Cookies.set('locale', selected.data('locale'), {expires : 365, domain : 'webtoons.com'});
+
+			Util.checkLoginStatus()
+					.then(function(isLoggedIn) {
+						if(isLoggedIn) {
+							return $.ajax('/account/changeEmailNotiSettingLanguage');
+						}
+					});
+
+			if ((location.pathname.indexOf("/list") &gt; -1 &amp;&amp; location.pathname.indexOf("/challenge/list") == -1) || location.pathname.indexOf("/viewer") &gt; -1) {
+				location.href = '/' + selected.data('content-language');	// 홈으로 이동
+			} else if(location.pathname == '/search') {
+				location.reload();
+			} else if(location.pathname == '/challenge/titleStat') {
+				location.href = '/challenge/dashboard';
+			} else {
+				var newUrl = location.href.replace('/en', '/' + selected.data('content-language'))
+				location.href = newUrl;
+			}
+		};
+
+		// 언어 선택
+		var contentLanguageCode = 'en';
+		var languageArea = $('#languageArea');
+		if(languageArea != null) {
+			languageArea
+					.on('click', '._selectedLanguage', function(event) {
+						event.preventDefault();
+						languageArea.find('._languageList').show();
+					})
+					.on('click', '._languageList ._language', function(event) {
+						event.preventDefault();
+						changeLanguageFunction(event.target);
+						languageArea.find('._languageList').hide();
+					});
+
+			var selectedLanguage = languageArea.find('._languageList ._' + contentLanguageCode);
+			languageArea.find('._selectedLanguage span').html(selectedLanguage.text());
+		}
+
+		// 언어 선택 팝업
+		var proxyName = "";
+		if((proxyName == "id" || proxyName == "th") &amp;&amp; Cookies.get('contentLanguage') == null &amp;&amp; location.href.indexOf('titleNo') &lt; 0) {
+
+			var selectLanguagePopupContent = Handlebars.compile($('#selectLanguagePopup')).html()();
+			var selectLanguagePopup = $("&lt;div&gt;&lt;/div&gt;").append(selectLanguagePopupContent);
+			$(document.body).append(selectLanguagePopup);
+
+			selectLanguagePopupContent
+					.on("click", "input", function(event) {
+						$('#selectLanguageLayer').find('label.ico_lang').removeClass('on');
+						$(event.target.nextSibling).addClass('on');
+					})
+					.on("click", "lk_ok", function(event) {
+						event.preventDefault();
+						var selected = $('#selectLanguageLayer').find('.ico_lang.on');
+						if(!selected.length) {
+							return;
+						}
+
+						changeLanguageFunction(selected[0]);
+					});
+
+			// 기본 언어 선택
+			var defaultLanguageLabel = selectLanguagePopupContent.find('label._' + proxyName);
+			if(defaultLanguageLabel.length) {
+				defaultLanguageLabel.addClass('on');
+				var defaultLanguageElement = defaultLanguageLabel.parent().parent();
+				defaultLanguageElement.parent().first().prepend(defaultLanguageElement);
+			}
+		}
+
+		// 도움말 이동(도움말 PC 페이지가 없어서 일단 모바일 페이지를 보여준다. 나중에 PC 페이지 나오면 교체)
+		$("._footer").first().on('click', '._linkFeedback', openFeedbackPopup);
+
+		// 타임존 쿠키
+		var dateVar = new Date();
+		var timezoneOffset = dateVar.getTimezoneOffset()/60 * (-1);
+		if(timezoneOffset &gt; 0) {
+			timezoneOffset = "+" + timezoneOffset;
+		}
+		Cookies.set('timezoneOffset', timezoneOffset, {expires : 365, domain : 'webtoons.com'});
+	});
+
+	function openFeedbackPopup(event) {
+		event.preventDefault();
+		var url = event.target.href;
+		var popup = window.open(url, 'helpWindow', 'menubar=no,location=no,resizable=no,scrollbars=yes,status=no,width=450,height=600');
+		popup.focus();
+		clickcr(this, 'fot.feedback', '', '', event, sNclkLanguageCode);
+	}
+
+	$(window).on('load', function() {
+		setTimeout(function() {
+			window.recentBarPromise.then(function(recentBar) {
+				recentBar.loadRecentWebtoon();
+			})
+
+			if (true &amp;&amp; $('#noticeArea').length) {
+				$.ajax('/en/notice')
+						.then(function(res) {
+							if (res) {
+								var noticeTemplate = Handlebars.compile($('#tplNotice').html());
+								$('#noticeArea').html(noticeTemplate(res)).show();
+							}
+						});
+			}
+
+		}, 1000);
+
+		nclk_do();
+		lcs_do();
+	});
+
+	
+	window.defaultErrorMessage = {
+		'alert.error.no_internet_connection' : 'No Internet Connection.\nPlease check the network connection.',
+		'alert.error.invalid_input' : 'Invalid input value.',
+		'alert.error.unknown' : 'Unknown error has occurred. Please try again in a moment.'
+	};
+
+	
+	var contentLanguageCode = "en";
+</script>
+
+<script type="text/x-handlebars-template" id="tplNotice">
+	&lt;div class="notice_detail"&gt;
+		&lt;a href="http://www.webtoons.com/en/notice/list" class="notice_tit NPI=a:notlist,g:en_en"&gt;Notice&lt;em class="ico_arr3"&gt;&gt;&lt;/em&gt;&lt;/a&gt;
+		&lt;a href="http://www.webtoons.com/en/notice/detail?noticeNo={{noticeNo}}" class="notice_cont NPI=a:notpage,g:en_en"&gt;&lt;span class="subj"&gt;{{title}}&lt;em class="date"&gt;{{registerYmdt}}&lt;/em&gt;&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
+</script>
+<script type="text/x-handlebars-template" id="abuseBlockLayer">
+	&lt;a href="http://www.webtoons.com" target="_top"&gt;
+		&lt;div class="ly_dim on" style="display:block;"&gt;
+			&lt;div class="bg"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="ly_wrap block"&gt;
+			&lt;div class="ly_img"&gt;&lt;/div&gt;
+			&lt;div class="ly_cont"&gt;
+				&lt;h2 class="blind"&gt;WEBTOON&lt;/h2&gt;
+				&lt;p class="blind"&gt;LINE WEBTOON&lt;/p&gt;
+				&lt;span&gt;WWW.WEBTOONS.COM&lt;/span&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/a&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="selectLanguagePopup">
+	&lt;div class="ly_dim on" style="display:block;"&gt;
+		&lt;div class="bg v3"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- 언어선택 레이어 --&gt;
+	&lt;div class="ly_wrap on"&gt;
+		&lt;div class="ly_box"&gt;
+			&lt;div class="ly_language" id="selectLanguageLayer"&gt;
+				&lt;h2&gt;SELECT CONTENTS LANGUAGE&lt;/h2&gt;
+				&lt;h3&gt;Language can be changed from settings&lt;/h3&gt;
+				&lt;ul class="slt_language"&gt;
+					&lt;li class="lang_en"&gt;
+						&lt;span class="chk_wrap"&gt;&lt;input type="radio" name="chk_lang" id="lang_en"&gt;&lt;label for="lang_en" class="ico_lang" data-content-language="en" data-locale="en"&gt;&lt;em class="ico_lang_skin"&gt;&lt;/em&gt;&lt;/label&gt;&lt;/span&gt;
+						&lt;label for="lang_en"&gt;English&lt;/label&gt;
+					&lt;/li&gt;
+					&lt;li class="lang_id"&gt;
+						&lt;span class="chk_wrap"&gt;&lt;input type="radio" name="chk_lang" id="lang_id"&gt;&lt;label for="lang_id" class="ico_lang _id" data-content-language="id" data-locale="id"&gt;&lt;em class="ico_lang_skin"&gt;&lt;/em&gt;&lt;/label&gt;&lt;/span&gt;
+						&lt;label for="lang_id"&gt;Bahasa&lt;br/&gt;Indonesia&lt;/label&gt;
+					&lt;/li&gt;
+					&lt;li class="lang_th"&gt;
+						&lt;span class="chk_wrap"&gt;&lt;input type="radio" name="chk_lang" id="lang_th"&gt;&lt;label for="lang_th" class="ico_lang _th" data-content-language="th" data-locale="th_TH"&gt;&lt;em class="ico_lang_skin"&gt;&lt;/em&gt;&lt;/label&gt;&lt;/span&gt;
+						&lt;label for="lang_th"&gt;ภาษาไทย&lt;/label&gt;
+					&lt;/li&gt;
+					&lt;li class="lang_cn"&gt;
+						&lt;span class="chk_wrap"&gt;&lt;input type="radio" name="chk_lang" id="lang_cn"&gt;&lt;label for="lang_cn" class="ico_lang _tw" data-content-language="zh-hans" data-locale="zh_CN"&gt;&lt;em class="ico_lang_skin"&gt;&lt;/em&gt;&lt;/label&gt;&lt;/span&gt;
+						&lt;label for="lang_cn"&gt;中文 (简体)&lt;/label&gt;
+					&lt;/li&gt;
+					&lt;li class="lang_tn"&gt;
+						&lt;span class="chk_wrap"&gt;&lt;input type="radio" name="chk_lang" id="lang_tn"&gt;&lt;label for="lang_tn" class="ico_lang _cn" data-content-language="zh-hant" data-locale="zh_TW"&gt;&lt;em class="ico_lang_skin"&gt;&lt;/em&gt;&lt;/label&gt;&lt;/span&gt;
+						&lt;label for="lang_tn"&gt;中文 (繁體)&lt;/label&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+				&lt;a href="#" class="lk_ok"&gt;OK&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;span class="ly_alignbox"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;!-- //언어선택 레이어 --&gt;
+</script>
+
+<script type="text/x-handlebars-template" id="eventWinnerPopup">
+	&lt;div class="ly_dim on"&gt;
+		&lt;div class="bg"&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div id="layer1" class="ly_wrap fixed on" style="display:block"&gt;
+		&lt;div class="ly_box"&gt;
+			&lt;div class="ly_personal_info"&gt;
+				&lt;h2&gt;{{title}}&lt;/h2&gt;
+				&lt;p class="text_gift"&gt;{{detailMessage}}&lt;/p&gt;
+				&lt;ul class="info_area"&gt;
+					{{#if userNameCollect}}
+					&lt;li&gt;
+						&lt;label for="winner_name" class="info_label"&gt;Name&lt;/label&gt;
+						&lt;input type="text" id="winner_name" class="info_input"&gt;
+					&lt;/li&gt;
+					{{/if}}
+					{{#if emailCollect}}
+					&lt;li&gt;
+						&lt;label for="winner_email" class="info_label"&gt;Email Address&lt;/label&gt;
+						&lt;input type="text" id="winner_email" class="info_input"&gt;
+					&lt;/li&gt;
+					{{/if}}
+					{{#if phoneNumberCollect}}
+					&lt;li&gt;
+						&lt;label for="winner_phone" class="info_label"&gt;Phone&lt;/label&gt;
+						&lt;input type="text" id="winner_phone" class="info_input"&gt;
+					&lt;/li&gt;
+					{{/if}}
+					{{#if addressCollect}}
+					&lt;li&gt;
+						&lt;label for="winner_addr" class="info_label"&gt;Address&lt;/label&gt;
+						&lt;input type="text" id="winner_addr" class="info_input"&gt;
+					&lt;/li&gt;
+					{{/if}}
+				&lt;/ul&gt;
+
+				&lt;ul class="chk_area"&gt;
+					&lt;li&gt;
+					&lt;span class="chk_wrap"&gt;
+						&lt;input type="checkbox" name="" id="chk_term2" class="chk_ico"&gt;
+						&lt;!-- [D] 체크박스가 checked가 될경우 아래 &lt;label&gt;엘리먼트에 on 클래스 추가 --&gt;
+						&lt;label for="chk_term2" class="chk_label"&gt;&lt;/label&gt;
+					&lt;/span&gt;
+						&lt;label for="chk_term2" class="chk_label2"&gt;I agree to LINE WEBTOON's &lt;a href="http://www.webtoons.com/en/terms#privacyPolicy" target="_blank" class="lk_link_term"&gt;Privacy Policy&lt;/a&gt;.&lt;/label&gt;
+					&lt;/li&gt;
+					{{#if (isEqual serviceZone 'JAPAN')}}&lt;li style="display:none;"&gt;{{/if}}
+					{{#if (isNotEqual serviceZone 'JAPAN')}}&lt;li&gt;{{/if}}
+					&lt;span class="chk_wrap"&gt;
+						{{#if (isEqual serviceZone 'JAPAN')}}&lt;input type="checkbox" name="" id="chk_term" class="chk_ico" checked="checked"&gt;{{/if}}
+						{{#if (isNotEqual serviceZone 'JAPAN')}}&lt;input type="checkbox" name="" id="chk_term" class="chk_ico"&gt;{{/if}}
+						&lt;!-- [D] 체크박스가 checked가 될경우 아래 &lt;label&gt;엘리먼트에 on 클래스 추가 --&gt;
+						&lt;label for="chk_term" class="chk_label"&gt;&lt;/label&gt;
+					&lt;/span&gt;
+					&lt;label for="chk_term" class="chk_label2"&gt;I agree that I am responsible for all taxes, fees, and surcharges on prizes.&lt;/label&gt;
+				&lt;/li&gt;
+				&lt;/ul&gt;
+
+				&lt;!-- [D] 인풋항목이 다 차지 않아서 버튼 비활성화로 표현이 될때는 &lt;button class="btn_submit" disabled&gt;로 적용해주세요 --&gt;
+				&lt;button class="btn_submit _btnSubmit" disabled="disabled"&gt;Submit&lt;/button&gt;
+				&lt;a href="#" class="lk_close _btnClose"&gt;Close layer&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;span class="ly_alignbox"&gt;&lt;/span&gt;
+	&lt;/div&gt;
+</script>
+
+<script type="text/javascript">
+	// iframe 어뷰징 사이트 대응
+	if (window.top != window) {
+		var html = $('#abuseBlockLayer').html();
+		$(document.body).empty().html(html);
+	}
+</script>
+
+
+
+
+
+
+	
+
+
+
+
+<script type="text/x-handlebars-template" id="tplMyLayer">
+    &lt;div class="ico_arr v3 up"&gt;&lt;/div&gt;
+    &lt;ul class="loginbox_cont"&gt;
+        &lt;li&gt;&lt;a href="http://www.webtoons.com/favorite" class="N=a:gnb.favorite,g:en_en"&gt;Subscribed&lt;/a&gt;&lt;/li&gt;
+        {{#if isChallengeAuthor}}
+        &lt;li&gt;&lt;a href="http://www.webtoons.com/challenge/dashboard" class="N=a:gnb.dashboard,g:en_en"&gt;Dashboard&lt;/a&gt;&lt;/li&gt;
+        {{/if}}
+        &lt;li&gt;&lt;a href="http://www.webtoons.com/en/mycomment"&gt;Comments&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="http://www.webtoons.com/account" class="N=a:gnb.account,g:en_en"&gt;Account&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="http://www.webtoons.com/member/logout" class="logoutbox_tab _btnLogout N=a:gnb.logout,g:en_en"&gt;&lt;span class="ico_login"&gt;&lt;/span&gt;Log Out&lt;/a&gt;
+</script>
+
+
+
+<script type="text/template" id="tplSignUp">
+    &lt;div class="ly_dim on" style="display:block;"&gt;
+        &lt;div class="bg"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="ly_wrap fixed on"&gt;
+        &lt;div class="ly_box"&gt;
+            &lt;div class="ly_chal_login"&gt;
+                &lt;p class="chal_login_dsc"&gt;
+                    &lt;!-- [D] 체크박스가 checked가 될경우 &lt;label&gt;엘리먼트에 on 클래스 추가 --&gt;
+                    &lt;span class="chk_area"&gt;&lt;input type="checkbox" name="" id="signup_chk_term" class="input_chk" onclick="Util.nClicks4CheckBox(this, 'log.termscheck', 'log.termsuncheck')"&gt;&lt;label for="signup_chk_term" class="ico_chkbox2"&gt;&lt;span class="blind"&gt;check&lt;/span&gt;&lt;/label&gt;&lt;/span&gt;
+                    
+                    
+                    &lt;span class="dsc"&gt;I agree to LINE WEBTOON's &lt;a href="http://www.webtoons.com/en/terms?noLogin=true" target="_blank" class="N=a:log.termsofuse,g:en_en"&gt;Terms of Use&lt;/a&gt; and &lt;a href="http://www.webtoons.com/en/terms?noLogin=true#privacyPolicy" target="_blank" class="N=a:log.privacy,g:en_en"&gt;Privacy Policy&lt;/a&gt;.&lt;/span&gt;
+                &lt;/p&gt;
+                &lt;p class="caution" id="_pleaseAgree" style="display:none;"&gt;Click the check button before submitting.&lt;/p&gt;
+                &lt;p class="btnarea"&gt;&lt;a href="#" class="btn_submit _signUp N=a:log.submit,g:en_en"&gt;Submit&lt;/a&gt;&lt;/p&gt;
+                &lt;a href="http://www.webtoons.com/member/logout" class="btn_ly_close _btnLogout N=a:log.close,g:en_en" &gt;layer close&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;span class="ly_alignbox"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+</script>
+
+<script type="text/javascript" src="/compress/release/js/gnb_20171220-1218.js" charset="utf-8"></script>
+<script>
+    $(function() {
+        new Gnb({
+            gnbLayerId:'#header'
+            , message : {
+                logoutMessage : 'Are you sure you want to log out?'
+                , systemErrorMessage : 'Unknown error has occurred. Please try again in a moment.'
+            }
+            , searchParam : {
+                locale : 'en',
+                autoCompleteUrl : 'http://ac.webtoons.com/ac?q=%s%11%s&amp;q_enc=UTF-8&amp;st=1&amp;r_lt=0&amp;r_format=json&amp;r_enc=UTF-8',
+                message : {
+                    'confirm.search.delete_history' : 'Are you sure you want to delete your recent search history?',
+                    'message.search.clear' : 'Clear Recent Searches',
+                    'message.search.autocomplete.webtoon' : 'Webtoon',
+                    'message.search.autocomplete.artist' : 'Creator',
+                    'message.search.autocomplete.view_all' : 'View All',
+                    'message.search.autocomplete.close' : 'Close'
+                },
+                imgDomain : 'http://webtoon.phinf.naver.net'
+            }
+        });
+    });
+</script>
+	
+
+<script type="text/javascript" src="/js/util/ranking.js" charset="UTF-8"></script>
+<script type="text/javascript">
+	window.genreNameMap = {
+		
+		'DRAMA' : 'Drama',
+		
+		'FANTASY' : 'Fantasy',
+		
+		'COMEDY' : 'Comedy',
+		
+		'ACTION' : 'Action',
+		
+		'SLICE_OF_LIFE' : 'Slice of life',
+		
+		'ROMANCE' : 'Romance',
+		
+		'SUPER_HERO' : 'Superhero',
+		
+		'HEARTWARMING' : 'Heartwarming',
+		
+		'HISTORICAL' : 'Historical',
+		
+		'THRILLER' : 'Thriller',
+		
+		'SPORTS' : 'Sports',
+		
+		'SF' : 'Sci-fi',
+		
+		'HORROR' : 'Horror',
+		
+		'TIPTOON' : 'Informative'
+		
+	};
+
+	$(window).on('load', function() {
+		var genreRanking = new Ranking({
+			layerId : '#genreRanking',
+			templateId : '#tplRankingTitle',
+			genreNameMap : window.genreNameMap,
+			apiInfo : {
+				filterParamName : 'rankingGenre',
+				url : '/en/ranking/getGenreRanking',
+				count : 3
+			}
+		});
+		var ageRanking = new Ranking({
+			layerId : '#ageRanking',
+			templateId : '#tplRankingTitle',
+			genreNameMap : window.genreNameMap,
+			apiInfo : {
+				filterParamName : 'target',
+				url : '/en/ranking/getAgeRanking',
+				count : 3
+			}
+		});
+
+		// 랭킹 타이틀 링크 클릭 이벤트 처리(현재 선택된 랭킹 필터로 랭킹 페이지 이동)
+		$("._rankingMoveBtn").on('click', function(e){
+			e.preventDefault();
+			var sGenreRankingFilter = genreRanking.getSelectedFilter();
+			var sAgeRankingFilter = ageRanking.getSelectedFilter();
+			location.href = '/' + contentLanguageCode + '/top?rankingGenre=' + sGenreRankingFilter + '&amp;target=' + sAgeRankingFilter;
+		});
+	});
+</script>
+
+<script type="text/x-handlebars-template" id="tplRankingTitle">
+	&lt;li&gt;
+		&lt;div class="pic_area"&gt;
+			&lt;a href="http://www.webtoons.com/en/{{representGenreSeoCode }}/{{groupName }}/list?title_no={{titleNo}}" class="NPI=a:list,i:{{titleNo}},g:en_en"&gt;&lt;span class="num_ranking ico_n{{ranking}}"&gt;{{ranking}}&lt;/span&gt;&lt;img src="http://webtoon.phinf.naver.net{{thumbnail}}?type=q90" alt="" width="92" height="98"&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="info_area"&gt;
+			&lt;p class="genre g_{{cssGenreName}}"&gt;{{genreName}}&lt;/p&gt;
+			&lt;p class="subj"&gt;
+				&lt;a href="http://www.webtoons.com/en/{{representGenreSeoCode }}/{{groupName }}/list?title_no={{titleNo }}"&gt;{{title}}&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;p class="author"&gt;{{authorName}}&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+</script>		
+
+	<script type="text/javascript" src="/compress/release/js/challenge/titleStat_20171220-1218.js" charset="UTF-8"></script>
+</div>
+<script type="text/javascript">
+$(function() {
+	function setInfoLayoutScrollbox() {
+		var patronScrollBox;
+		
+		$("#seeDetail").on("click", function(e){
+			e.preventDefault();
+			
+			$("#ly_patron_guide_dim").addClass("on");
+			$("#ly_patron_guide").addClass("on");
+
+			$("body").css('position', 'fixed');
+			if(!patronScrollBox) {
+				patronScrollBox = new IScroll('#patron_scrollbox .scrollbar-box', {
+					useTransform : true,
+					resizeScrollbars : true,
+					scrollX : false,
+					scrollY : true,
+					scrollbars: 'custom',
+					mouseWheel: true,
+					interactiveScrollbars: true,
+			        disableMouse: true
+				});
+			}
+		});
+
+		$('#ly_patron_guide').on('click', '.btn_close', function(e) {
+			e.preventDefault();
+			
+			$("#ly_patron_guide_dim").removeClass('on');
+			$("#ly_patron_guide").removeClass('on');
+			$("body").css('position', 'relative');
+			return false;
+		});
+	}
+	function signExpectedWebtoonBonusArea() {
+		var episodeCountEligible = true;
+		var subscriberBonusEligible = true;
+		var pvsBonusEligible = true;
+		
+		var activeEpisodeCountAreaId = "#_episode_";
+		var activeSubscriberBonusAreaId = "#_subscriber_";
+		var activePvsBonusAreaId = "#_pvs_";
+		
+		if(episodeCountEligible) {
+			activeEpisodeCountAreaId += "eligible";
+		} else {
+			activeEpisodeCountAreaId += "not_eligible";
+		}
+		
+		if(subscriberBonusEligible) {
+			activeSubscriberBonusAreaId += 400;
+		} else {
+			activeSubscriberBonusAreaId += "not_eligible";
+		}
+		
+		if(pvsBonusEligible) {
+			activePvsBonusAreaId += 500;
+		} else {
+			activePvsBonusAreaId += "not_eligible";
+		}
+		
+		$(activeEpisodeCountAreaId).addClass("on");
+		$(activeSubscriberBonusAreaId).addClass("on").prev().addClass("on");
+		$(activePvsBonusAreaId).addClass("on").prev().addClass("on");
+	}
+	
+	function setCheerUpText() {
+		var showLastMonth = true;
+		var isRegisteredPatreonUser = true;
+		var seeDetail = $("#seeDetail");
+		
+		var doRegisterText = "Enter your Patreon ID and let us become your Patron";
+		var cheerUpText = "Keep it up and let us become your Patron";
+		if(showLastMonth) {
+			if(!isRegisteredPatreonUser) {
+				seeDetail.prepend(doRegisterText);
+			} else {
+				$.ajax({
+					url : '/challenge/author/getPatreonInfo',
+					data : {
+						userId : '2332042'
+					}
+				}).then($.proxy(function(res) {
+					if (res) {
+						if(res.webtoonBonus) {
+							seeDetail.prepend("Congratulations! Webtoon has pledged $" + Util.changeNumberFormat(res.webtoonBonus) + " to you as your Patron!");
+						} else {
+							seeDetail.prepend(cheerUpText);
+						}
+					}
+				}, this));
+			}			
+		} else {
+			if(!isRegisteredPatreonUser) {
+				seeDetail.prepend(doRegisterText);
+			} else {
+				seeDetail.prepend(cheerUpText);
+			}
+		}
+	}
+	
+	setInfoLayoutScrollbox();
+	signExpectedWebtoonBonusArea();
+	setCheerUpText();
+
+	var titleStat = new TitleStat();
+});
+</script>
+
+
+<div class="recently_area _recentBarArea NE=a:hrc">		<a href="#" title="Recently viewed" class="menu _btnRecentBarFold NPI=a:close,g:en_en" onclick="return false;"><span class="t_recently">Recently viewed</span><span class="ico_recently"></span></a>		<div class="recently_cont">			<h4 class="t_recently2">Recently viewed</h4>			<span class="bar"></span>			<ul class="_recentList">				<li><div class="detail_info"><span class="thmb"></span><span class="info"></span></div></li>				<li><div class="detail_info"><span class="thmb"></span><span class="info"></span></div></li>				<li><div class="detail_info"><span class="thmb"></span><span class="info"></span></div></li>				<li><div class="detail_info"><span class="thmb"></span><span class="info"></span></div></li>				<li><div class="detail_info"><span class="thmb"></span><span class="info"></span></div></li>			</ul>		</div>		<span class="lt_line"></span>		<span class="lb_line"></span>	</div></body></html>
