@@ -1,10 +1,16 @@
 - Numeric stats
 http://www.webtoons.com/en/challenge/camellia/list?title_no=81223
-views: 569.8K , rating: 9.28
+views: 569.8K //*[@id="_asideDetail"]/ul/li[2]/em
+rating: 9.28 //*[@id="_starScoreAverage"]
 
 - Ranking stats
 https://tapas.io/comics?browse=POPULAR
 https://tapas.io/comics?browse=TRENDING
+
+//*[@id="page-wrap"]/div/section[1]/ul/li[2]/a[1] for rank 2 title
+
+//*[@id="page-wrap"]/div/section[1]/ul/li[4]/a[1] for rank 4 title
+//*[@id="page-wrap"]/div/section[1]/ul/li[4]/a[2] for rank 4 author name
 
 type t =
 | Not_on_front_page
