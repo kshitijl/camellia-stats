@@ -11,6 +11,6 @@ type t =
 | On_front_page_with_rank of int
 
 
-- Table output
+- Csv output
  One row of data per day: that with timestamp closest to 9pm.
  Two columns per statistic: raw number, and change from previous row.
