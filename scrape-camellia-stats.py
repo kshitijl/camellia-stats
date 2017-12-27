@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-import os, datetime, hashlib
+import os, datetime, hashlib, logging, traceback
+logging.basicConfig(level=logging.INFO)
 
 from lxml import html
 import requests
@@ -23,16 +24,14 @@ def download_with_user_agent(url):
 def parse_number_with_commas(s):
     return int(s.replace(',', ''))
 
+def format_timestamp(as_of):
+    return datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
+
 def timestamped_filename(directory, as_of):
-    time_string = datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
+    time_string = format_timestamp(as_of)
     return os.path.join(directory, time_string)
 
-def save_content_to_dated_file_in_dir(content, directory, as_of=None):
-    import datetime
-        
-    if not as_of:
-        as_of = datetime.datetime.now()
-
+def save_content_to_timestamped_file_in_dir(content, directory, as_of):
     if os.path.exists(directory):
         if not os.path.isdir(directory):
             raise AttributeError("{} exists but is not a directory".format(directory))
@@ -55,6 +54,22 @@ def sha256_hexencoded(text):
 def exact_tree_from_xpath(content, selector):
     return html.fromstring(content).xpath(selector)[0]
 
+class Cached_as_of(object):
+    can_be_considered_current = False
+    def __init__(self, time):
+        self.time = time
+
+    def __str__(self):
+        return "Cached_as_of {}".format(format_timestamp(self.time))        
+
+class Current_as_of(object):
+    can_be_considered_current = True    
+    def __init__(self, time):
+        self.time = time
+
+    def __str__(self):
+        return "Current_as_of {}".format(format_timestamp(self.time))
+
 class Page(object):
     def __init__(self, retriever, statistics):
         self.retriever, self.statistics = retriever, statistics
@@ -69,22 +84,25 @@ class Page(object):
         except:
             return None
         
-    def download_and_save_content(self):
+    def download_and_save_content(self, current_time):
         content = self.retriever.retrieve()
-        save_content_to_dated_file_in_dir(content, self.cache_directory())
+        logging.info("Downloading and caching %s as-of %s",
+                     self.retriever.url,
+                     format_timestamp(current_time))
+        save_content_to_timestamped_file_in_dir(content, self.cache_directory(), current_time)
         return content
         
     def retrieve_content(self, as_of):
-        if as_of is None:
-            maybe_answer = self.lookup_content_in_cache(datetime.datetime.now())
+        if as_of.can_be_considered_current:
+            maybe_answer = self.lookup_content_in_cache(as_of.time)
             if maybe_answer:
                 return maybe_answer
             else:
-                return self.download_and_save_content()
+                return self.download_and_save_content(as_of.time)
         else:
-            answer = self.lookup_content_in_cache(as_of)
+            answer = self.lookup_content_in_cache(as_of.time)
             if not answer:
-                raise KeyError("Requested content for {} is not in cache".format(as_of))
+                raise KeyError("Requested content for {} is not in cache".format(as_of.time))
             return answer
 
     def all_statistics(self):
@@ -118,22 +136,38 @@ class Scraped_statistics(object):
         page, stat = statistic_name.split(".")
         return self.stats_dict[page], self.stats_dict[page][stat]
 
-    def scrape_one(self, statistic_name, as_of=None):
+    def scrape_one(self, statistic_name, as_of):
         page, statistic = self.lookup_statistic(statistic_name)
+
+        logging.info("Retrieving %s as-of %s", statistic_name, str(as_of))
         content         = page.retrieve_content(as_of)
 
+        logging.info("Parsing %s", statistic_name)
         return statistic.parse(content)
 
-    def scrape_all(self, as_of=None):
-        return self.scrape_some(self.all_stats())
+    def scrape_all(self, as_of):
+        return self.scrape_some(self.all_stats(), as_of)
 
-    def scrape_some(self, stats, as_of=None):
-        return { stat: self.scrape_one(stat, as_of) for stat in stats }
+    def scrape_some(self, stats, as_of):
+        answer = {}
+        for stat in stats:
+            try:
+                answer[stat] = self.scrape_one(stat, as_of)
+            except BaseException as e:
+                logging.info("There was trouble scraping %s", stat)
+                logging.info(traceback.format_exc())
+        return answer
 
 def append_to_log(log_filename, as_of, contents):
-    timestamp = datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
+    if not contents:
+        logging.info("Nothing to append to log, exiting")
+        return
+    
+    timestamp = format_timestamp(as_of)
     what_to_write = {timestamp: contents}
-    print "Writing", what_to_write
+
+    logging.info("Appending successful scrapes to event-log: %s",
+                 str(what_to_write))
 
     import json
     with open(log_filename, 'a') as output_file:
@@ -159,7 +193,7 @@ class Webtoons_logged_in_retriever(object):
             password_field.fill(self.password)
 
             import time
-            time.sleep(1)
+            time.sleep(5)
             
             login_button = browser.find_by_id("btnLogIn")[0]
             login_button.click()
@@ -216,13 +250,14 @@ def main():
     import argparse
     parser = argparse.ArgumentParser(description="Download and parse statistics")
     parser.add_argument('statistics', type=str, nargs='*')
-    parser.add_argument('--username', type=str, required=True)
-    parser.add_argument('--password', type=str, required=True)
+    parser.add_argument('--webtoons-username', type=str, required=True)
+    parser.add_argument('--webtoons-password', type=str, required=True)
 
     def timestamp(t):
-        return datetime.datetime.strptime(t, '%Y-%m-%d-%H-%M')
+        return Cached_as_of(datetime.datetime.strptime(t, '%Y-%m-%d-%H-%M'))
     
-    parser.add_argument('--as-of'   , type=timestamp, default=datetime.datetime.now())
+    parser.add_argument('--as-of'   , type=timestamp,
+                        default=Current_as_of(datetime.datetime.now()))
 
     args = parser.parse_args()
 
@@ -238,8 +273,8 @@ def main():
         'webtoons': Page(
             retriever=Webtoons_logged_in_retriever(
                 url='http://www.webtoons.com/challenge/titleStat?titleNo=81223',
-                username=args.username,
-                password=args.password),
+                username=args.webtoons_username,
+                password=args.webtoons_password),
             statistics={
                 'subs': Webtoons_statistic(
                     xpath='//*[@id="content"]/div[2]/div[2]/div/div[2]/ul[1]/li[3]/span/text()'),
@@ -252,9 +287,9 @@ def main():
         scrape_result = stats.scrape_all(as_of=args.as_of)
     else:
         scrape_result = stats.scrape_some(args.statistics, as_of=args.as_of)
-    
+
     append_to_log(Config.log_filename,
-                  args.as_of,
+                  args.as_of.time,
                   scrape_result)
 
 if __name__ == "__main__":
