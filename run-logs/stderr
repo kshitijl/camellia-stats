@@ -713,3 +713,188 @@ INFO:root:Traceback (most recent call last):
 ConnectionError: HTTPSConnectionPool(host='tapas.io', port=443): Max retries exceeded with url: /ladypcpx/subscribers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1112192d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
 
 INFO:root:Nothing to append to log, exiting
+fatal: unable to access 'https://github.com/kshitijl/camellia-stats.git/': Could not resolve host: github.com
+INFO:root:Retrieving tapas-comic-page.views as-of Current_as_of 2017-12-28-03-00
+INFO:root:Downloading and caching http://tapas.io/series/Camellia as-of 2017-12-28-03-00
+INFO:root:Parsing tapas-comic-page.views
+INFO:root:Retrieving webtoons.montly_pvs as-of Current_as_of 2017-12-28-03-00
+INFO:root:Downloading and caching http://www.webtoons.com/challenge/titleStat?titleNo=81223 as-of 2017-12-28-03-00
+INFO:root:Parsing webtoons.montly_pvs
+INFO:root:Retrieving webtoons.subs as-of Current_as_of 2017-12-28-03-00
+INFO:root:Parsing webtoons.subs
+INFO:root:Retrieving webtoons.likes as-of Current_as_of 2017-12-28-03-00
+INFO:root:Parsing webtoons.likes
+INFO:root:Retrieving tapas-creator-page.subs as-of Current_as_of 2017-12-28-03-00
+INFO:root:Downloading and caching https://tapas.io/ladypcpx/subscribers as-of 2017-12-28-03-00
+INFO:root:Parsing tapas-creator-page.subs
+INFO:root:Appending successful scrapes to event-log: {'2017-12-28-03-00': {'tapas-creator-page.subs': 10408, 'webtoons.subs': 17256, 'webtoons.likes': 29834, 'webtoons.montly_pvs': 118471, 'tapas-comic-page.views': 300587}}
+To https://github.com/kshitijl/camellia-stats.git
+   7c02d83..59c9870  master -> master
+INFO:root:Retrieving tapas-comic-page.views as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://tapas.io/series/Camellia as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping tapas-comic-page.views
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 248, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 24, in download_with_user_agent
+    return requests.get(url,headers=headers).text
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='tapas.io', port=80): Max retries exceeded with url: /series/Camellia (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10ee8fb50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Retrieving webtoons.montly_pvs as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://www.webtoons.com/challenge/titleStat?titleNo=81223 as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping webtoons.montly_pvs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 223, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving webtoons.subs as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://www.webtoons.com/challenge/titleStat?titleNo=81223 as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping webtoons.subs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 223, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving webtoons.likes as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://www.webtoons.com/challenge/titleStat?titleNo=81223 as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping webtoons.likes
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 223, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving tapas-creator-page.subs as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading https://tapas.io/ladypcpx/subscribers as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping tapas-creator-page.subs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 248, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 24, in download_with_user_agent
+    return requests.get(url,headers=headers).text
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='tapas.io', port=443): Max retries exceeded with url: /ladypcpx/subscribers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f9f4bd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Retrieving webtoons-public-comic-page.rating as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://www.webtoons.com/en/challenge/camellia/list?title_no=81223 as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping webtoons-public-comic-page.rating
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 248, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 24, in download_with_user_agent
+    return requests.get(url,headers=headers).text
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='www.webtoons.com', port=80): Max retries exceeded with url: /en/challenge/camellia/list?title_no=81223 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10fb0e150>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Retrieving webtoons-public-comic-page.views as-of Current_as_of 2017-12-28-04-00
+INFO:root:Downloading http://www.webtoons.com/en/challenge/camellia/list?title_no=81223 as-of 2017-12-28-04-00
+INFO:root:There was trouble scraping webtoons-public-comic-page.views
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 189, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 177, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 107, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 93, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 248, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 24, in download_with_user_agent
+    return requests.get(url,headers=headers).text
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='www.webtoons.com', port=80): Max retries exceeded with url: /en/challenge/camellia/list?title_no=81223 (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10fb0e0d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Nothing to append to log, exiting
+fatal: unable to access 'https://github.com/kshitijl/camellia-stats.git/': Could not resolve host: github.com

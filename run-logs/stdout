@@ -21,3 +21,36 @@
  4 files changed, 112 insertions(+)
 [master 22cb5a6] z
  4 files changed, 111 insertions(+)
+[master 59c9870] z
+ 4 files changed, 111 insertions(+)
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   run-logs/record-of-scrape-job-finishing
+	modified:   run-logs/record-of-scrape-job-starting
+	modified:   run-logs/stderr
+	modified:   run-logs/stdout
+	modified:   scrape-events-log
+
+Untracked files:
+	#scrape-camellia-stats.py#
+	.#scrape-camellia-stats.py
+
+no changes added to commit
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+	modified:   notes
+	modified:   run-logs/record-of-scrape-job-finishing
+	modified:   run-logs/record-of-scrape-job-starting
+	modified:   run-logs/stderr
+	modified:   run-logs/stdout
+	modified:   scrape-events-log
+
+Untracked files:
+	#scrape-camellia-stats.py#
+	.#scrape-camellia-stats.py
+
+no changes added to commit
