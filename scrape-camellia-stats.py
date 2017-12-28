@@ -280,6 +280,16 @@ class Tapas_subs(object):
 
         return parse_number_with_commas(chop_suffix(subs_string, suffix='Subscribers'))
 
+class Featured_comics_in_order(object):
+    def parse(self, content):
+        all_titles = html.fromstring(content).xpath('//*[@id="page-wrap"]/div/section[1]/ul')[0]
+
+        answer = []
+        for title_tag in all_titles.getchildren():
+            answer.append([a.text for a in title_tag.findall('a')])
+
+        return answer
+
 def main():
     import argparse
     parser = argparse.ArgumentParser(description="Download and parse statistics")
@@ -313,7 +323,25 @@ def main():
                     xpath='//*[@id="_starScoreAverage"]/text()')                
             },
         ),
-                
+
+        'tapas-popular-first-page': Page(
+            retriever=Plain_url_retriever('https://tapas.io/comics?browse=POPULAR'),
+            statistics={
+                'comics-in-order': Featured_comics_in_order()
+            }),
+
+        'tapas-trending-first-page': Page(
+            retriever=Plain_url_retriever('https://tapas.io/comics?browse=TRENDING'),
+            statistics={
+                'comics-in-order': Featured_comics_in_order()
+            }),
+
+        'tapas-staff-picks-first-page': Page(
+            retriever=Plain_url_retriever('https://tapas.io/comics?browse=TAPASTIC'),
+            statistics={
+                'comics-in-order': Featured_comics_in_order()
+            }),
+
         'webtoons': Page(
             retriever=Webtoons_logged_in_retriever(
                 url='http://www.webtoons.com/challenge/titleStat?titleNo=81223',
