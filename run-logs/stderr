@@ -269,3 +269,110 @@ INFO:root:Traceback (most recent call last):
 ConnectionError: HTTPSConnectionPool(host='tapas.io', port=443): Max retries exceeded with url: /ladypcpx/subscribers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10f4dfd10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
 
 INFO:root:Nothing to append to log, exiting
+fatal: unable to access 'https://github.com/kshitijl/camellia-stats.git/': Could not resolve host: github.com
+INFO:root:Retrieving tapas-comic-page.views as-of Current_as_of 2017-12-27-18-21
+INFO:root:There was trouble scraping tapas-comic-page.views
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 155, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 143, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 101, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 88, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 214, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 22, in download_with_user_agent
+    return requests.get(url,headers=headers).content
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPConnectionPool(host='tapas.io', port=80): Max retries exceeded with url: /series/Camellia (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x107ba9550>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Retrieving webtoons.montly_pvs as-of Current_as_of 2017-12-27-18-21
+INFO:root:There was trouble scraping webtoons.montly_pvs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 155, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 143, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 101, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 88, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 189, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving webtoons.subs as-of Current_as_of 2017-12-27-18-21
+INFO:root:There was trouble scraping webtoons.subs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 155, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 143, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 101, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 88, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 189, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving webtoons.likes as-of Current_as_of 2017-12-27-18-21
+INFO:root:There was trouble scraping webtoons.likes
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 155, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 143, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 101, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 88, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 189, in retrieve
+    username_field = browser.find_by_id("emailId")[0]
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/splinter/element_list.py", line 44, in __getitem__
+    self.find_by, self.query))
+ElementDoesNotExist: no elements could be found with id "emailId"
+
+INFO:root:Retrieving tapas-creator-page.subs as-of Current_as_of 2017-12-27-18-21
+INFO:root:There was trouble scraping tapas-creator-page.subs
+INFO:root:Traceback (most recent call last):
+  File "./scrape-camellia-stats.py", line 155, in scrape_some
+    answer[stat] = self.scrape_one(stat, as_of)
+  File "./scrape-camellia-stats.py", line 143, in scrape_one
+    content         = page.retrieve_content(as_of)
+  File "./scrape-camellia-stats.py", line 101, in retrieve_content
+    return self.download_and_save_content(as_of.time)
+  File "./scrape-camellia-stats.py", line 88, in download_and_save_content
+    content = self.retriever.retrieve()
+  File "./scrape-camellia-stats.py", line 214, in retrieve
+    return download_with_user_agent(self.url)
+  File "./scrape-camellia-stats.py", line 22, in download_with_user_agent
+    return requests.get(url,headers=headers).content
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/kshitijlauria/Dropbox/src/camellia-stats/virtual-environment/lib/python2.7/site-packages/requests/adapters.py", line 508, in send
+    raise ConnectionError(e, request=request)
+ConnectionError: HTTPSConnectionPool(host='tapas.io', port=443): Max retries exceeded with url: /ladypcpx/subscribers (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10881f2d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known',))
+
+INFO:root:Nothing to append to log, exiting
