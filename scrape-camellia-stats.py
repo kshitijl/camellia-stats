@@ -19,7 +19,9 @@ def download_with_user_agent(url):
         'User-Agent': 'Mozilla/5.0 (Macintosh; \
         Intel Mac OS X 10_11_5) AppleWebKit/537.36 \
         (KHTML, lik} Gecko) Chrome/50.0.2661.102 Safari/537.36'}
-    return requests.get(url,headers=headers).content
+
+    # n.b. [.text] returns the decoded [.content]
+    return requests.get(url,headers=headers).text
 
 def parse_number_with_commas(s):
     return int(s.replace(',', ''))
@@ -85,8 +87,12 @@ class Page(object):
             return None
         
     def download_and_save_content(self, current_time):
+        logging.info("Downloading %s as-of %s",
+                     self.retriever.url,
+                     format_timestamp(current_time))
         content = self.retriever.retrieve()
-        logging.info("Downloading and caching %s as-of %s",
+        
+        logging.info("Caching %s as-of %s",
                      self.retriever.url,
                      format_timestamp(current_time))
         save_content_to_timestamped_file_in_dir(content, self.cache_directory(), current_time)
@@ -118,6 +124,34 @@ class Webtoons_statistic(object):
     def parse(self, content):
         scraped_text = exact_tree_from_xpath(content, self.xpath)
         return parse_number_with_commas(scraped_text)
+
+def number_in_thousands_with_suffix_K(text):
+    return int(float(chop_suffix(text, suffix='K')) * 1000)
+
+def body_of_tag(content, xpath):
+    return exact_tree_from_xpath(content, xpath)
+
+class Number_in_thousands_with_suffix_K_body_of_tag(object):
+    def __init__(self, xpath):
+        self.xpath = xpath
+
+    def parse(self, content):
+        return number_in_thousands_with_suffix_K(
+            body_of_tag(content, self.xpath))
+
+def float_between_0_and_10(text):
+    answer = float(text)
+    if not 0 < answer < 10:
+        raise ValueError("Expected a number between 0 and 10, got {}".format(text))
+    return answer        
+    
+class Float_between_0_and_10_body_of_tag(object):
+    def __init__(self, xpath):
+        self.xpath = xpath
+
+    def parse(self, content):
+        return float_between_0_and_10(
+            body_of_tag(content, self.xpath))
 
 class Scraped_statistics(object):
     def __init__(self, stats_dict):
@@ -269,6 +303,16 @@ def main():
         'tapas-creator-page': Page(
             retriever=Plain_url_retriever('https://tapas.io/{}/subscribers'.format(Config.creator_name)),
             statistics={ 'subs': Tapas_subs(Config.creator_name) }),
+
+        'webtoons-public-comic-page': Page(
+            retriever=Plain_url_retriever('http://www.webtoons.com/en/challenge/camellia/list?title_no=81223'.format(Config.creator_name)),
+            statistics={
+                'views': Number_in_thousands_with_suffix_K_body_of_tag(                
+                    xpath='//*[@id="_asideDetail"]/ul/li[2]/em/text()'),
+                'rating': Float_between_0_and_10_body_of_tag(                
+                    xpath='//*[@id="_starScoreAverage"]/text()')                
+            },
+        ),
                 
         'webtoons': Page(
             retriever=Webtoons_logged_in_retriever(
