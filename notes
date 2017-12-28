@@ -1,16 +1,9 @@
-- Ranking stats
-https://tapas.io/comics?browse=POPULAR
-https://tapas.io/comics?browse=TRENDING
-
-//*[@id="page-wrap"]/div/section[1]/ul/li[2]/a[1] for rank 2 title
-
-//*[@id="page-wrap"]/div/section[1]/ul/li[4]/a[1] for rank 4 title
-//*[@id="page-wrap"]/div/section[1]/ul/li[4]/a[2] for rank 4 author name
-
-type t =
-| Not_on_front_page
-| On_front_page_with_rank of int
 
 - Csv output
  One row of data per day: that with timestamp closest to 9pm.
  Two columns per statistic: raw number, and change from previous row.
+
+Ranking processing
+type t =
+| Not_on_front_page
+| On_front_page_with_rank of int
