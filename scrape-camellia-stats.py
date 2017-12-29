@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+# Parts:
+# 1. Downloading the current state of all pages
+# 2. Parsing statistics as-of that downloading time, and appending them to a log
+# 3. Processing the log to produce csv
+
 import os, datetime, hashlib, logging, traceback
 logging.basicConfig(level=logging.INFO)
 
