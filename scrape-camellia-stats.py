@@ -11,6 +11,8 @@ logging.basicConfig(level=logging.INFO)
 from lxml import html
 import requests
 
+from common import *
+
 class Config:
     content_cache_dir = './downloaded-stats-pages'
     log_filename      = './scrape-events-log'
@@ -30,9 +32,6 @@ def download_with_user_agent(url):
 
 def parse_number_with_commas(s):
     return int(s.replace(',', ''))
-
-def format_timestamp(as_of):
-    return datetime.datetime.strftime(as_of, "%Y-%m-%d-%H-%M")
 
 def timestamped_filename(directory, as_of):
     time_string = format_timestamp(as_of)
@@ -67,7 +66,7 @@ class Cached_as_of(object):
         self.time = time
 
     def __str__(self):
-        return "Cached_as_of {}".format(format_timestamp(self.time))        
+        return "Cached_as_of {}".format(format_timestamp(self.time))
 
 class Current_as_of(object):
     can_be_considered_current = True    
@@ -203,7 +202,8 @@ def append_to_log(log_filename, as_of, contents):
         return
     
     timestamp = format_timestamp(as_of)
-    what_to_write = {timestamp: contents}
+    what_to_write = {'timestamp': timestamp}
+    what_to_write.update(contents)
 
     logging.info("Appending successful scrapes to event-log: %s",
                  str(what_to_write))
@@ -303,13 +303,26 @@ def main():
     parser.add_argument('--webtoons-password', type=str, required=True)
 
     def timestamp(t):
-        return Cached_as_of(datetime.datetime.strptime(t, '%Y-%m-%d-%H-%M'))
+        return Cached_as_of(parse_timestamp(t))
     
     parser.add_argument('--as-of'   , type=timestamp,
                         default=Current_as_of(datetime.datetime.now()))
 
     args = parser.parse_args()
 
+    # TODO cleanliness: Just read a config file and pass it around.
+    # The username and password should just live there. Provide a
+    # default one with 'None' login. Skip logged-in stuff in that
+    # case.
+
+    # TODO cleanliness: Get rid of the 'caching' terminology and
+    # interfaces. Just: downloading and extraction. Rename statistic
+    # -> measurement.
+
+    # TODO cleanliness: A page shouldn't own statistics.
+    # page = Page(how to download)
+    # measurement = Measurement(page, how_to_parse)
+    # observable  = Observable(measurement1, measurement2, ..., how_to_compute)
     stats = Scraped_statistics({
         'tapas-comic-page': Page(
             retriever=Plain_url_retriever('http://tapas.io/series/{}'.format(Config.comic_name)),
