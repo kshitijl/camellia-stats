@@ -1,9 +1,10 @@
+- Undersample: one row of data per day: that with timestamp closest to
+  9pm.
 
-- Csv output
- One row of data per day: that with timestamp closest to 9pm.
- Two columns per statistic: raw number, and change from previous row.
+- Column names and ordering: get them from Julie's current production
+  spreadsheet.
 
-Ranking processing
-type t =
-| Not_on_front_page
-| On_front_page_with_rank of int
+- Rankings: report the best rank achieved over the course of the day.
+
+- Fine-grained ranking: a separate report of just the ranks, at the
+  finest granularity available.

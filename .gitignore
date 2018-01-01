@@ -3,4 +3,4 @@
 .DS_Store
 virtual-environment
 run-logs
-downloaded-stats-pages
+output-artifacts/downloaded-pages

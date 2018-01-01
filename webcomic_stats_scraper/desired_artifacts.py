@@ -41,7 +41,7 @@ def tapas_ranking_observables(config):
                                     featured_comics_in_order)
 
     measurements = [tapas_popular, tapas_trending, tapas_staff_picks]
-    return [observable.rank(config.comic_name, config.creator_name, m)
+    return [observable.rank_of_comic_in(config.comic_name, config.creator_name, m)
             for m in measurements]
 
 def webtoons_logged_in_dashboard_observables(config):

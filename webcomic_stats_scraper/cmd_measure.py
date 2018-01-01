@@ -1,23 +1,27 @@
 import json, logging, os
 
+from pythonjsonlogger import jsonlogger
+
 import cmd_shared, timestamp_utils
 from page_utils import page_download_directory, timestamped_filename
+from snapshot import Snapshot
 
-def append_to_log(log_filename, as_of, contents):
-    if not contents:
+def initialize_measurement_log(log_filename):
+    logger     = logging.getLogger(__name__ + '.measurement_log')
+    logHandler = logging.FileHandler(log_filename)
+    logHandler.setFormatter(jsonlogger.JsonFormatter())
+    logger.addHandler(logHandler)        
+    
+    logger.setLevel(logging.INFO)
+    return logger
+
+def append_to_log(logger, snapshot):
+    if not snapshot.measurements:
         logging.info("Nothing to append to log, exiting")
         return
     
-    timestamp = timestamp_utils.to_string(as_of)
-    what_to_write = {'timestamp': timestamp}
-    what_to_write.update(contents)
-
-    logging.info("Appending successful scrapes to event-log: %s",
-                 str(what_to_write))
-
-    with open(log_filename, 'a') as output_file:
-        json.dump(what_to_write, output_file)
-        output_file.write('\n')
+    logger.info({'message' : 'Snapshot of measurements',
+                 'snapshot': snapshot.to_dict()})
 
 def command(args, config, artifacts):
     measurements_to_extract = cmd_shared.select_artifacts(args.selector,
@@ -31,7 +35,7 @@ def command(args, config, artifacts):
                       'page.name': measurement.page.name,
                       'page.url' : measurement.page.url})
         
-        page_directory = page_download_directory(config.download_dir,
+        page_directory = page_download_directory(args.download_dir,
                                                  measurement.page.name)
         
         page_filename  = timestamped_filename(page_directory, args.as_of)
@@ -51,6 +55,5 @@ def command(args, config, artifacts):
         
         measurement_results[measurement.name] = result
     
-    append_to_log(config.measurements_log,
-                  args.as_of,
-                  measurement_results)
+    append_to_log(initialize_measurement_log(args.measurements_log),
+                  Snapshot(args.as_of, measurement_results))
