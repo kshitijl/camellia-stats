@@ -8,3 +8,7 @@
 
 - Fine-grained ranking: a separate report of just the ranks, at the
   finest granularity available.
+
+- Use python3, not python2
+
+- Log errors in [download-pages]: 403 or 404 responses
