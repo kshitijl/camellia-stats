@@ -19,7 +19,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Tools for downloading and scraping webcomic stats") 
 
-    parser.add_argument('--config-file', type=file, default='./config.json')
+    parser.add_argument('--config-file', type=open, default='./config.json')
     parser.add_argument('--selector'   , type=str , default=None)
     subparsers = parser.add_subparsers(help='Subcommands implementing steps in the pipeline')
 

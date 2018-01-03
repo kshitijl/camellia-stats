@@ -7,10 +7,7 @@ from page_utils import *
 def download_with_user_agent(url):
     # We need to send a User-Agent or else Tapas returns a 403
     # Forbidden.
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; \
-        Intel Mac OS X 10_11_5) AppleWebKit/537.36 \
-        (KHTML, lik} Gecko) Chrome/50.0.2661.102 Safari/537.36'}
+    headers = { 'User-Agent': 'wget/1.19.2' }
 
     # n.b. [.text] returns the decoded [.content], based on its best
     # guess for the encoding.

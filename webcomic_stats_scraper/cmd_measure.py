@@ -46,14 +46,18 @@ def command(args, config, artifacts):
             continue
         
         content = file(page_filename).read()
-        result  = measurement.parse(content)
-
-        logging.info({'message': 'Recording measured result',
-                      'as-of'  : timestamp_utils.to_string(args.as_of),
-                      'measurement.name': measurement.name,
-                      'measurement-result': result})
+        try:
+            result  = measurement.parse(content)
         
-        measurement_results[measurement.name] = result
+            logging.info({'message': 'Recording measured result',
+                          'as-of'  : timestamp_utils.to_string(args.as_of),
+                          'measurement.name': measurement.name,
+                          'measurement-result': result})
+            
+            measurement_results[measurement.name] = result
+        except BaseException as e:
+            logging.info({'message': 'Measurement failed',
+                          'exception': e})
     
     append_to_log(initialize_measurement_log(args.measurements_log),
                   Snapshot(args.as_of, measurement_results))
