@@ -6,4 +6,4 @@ def command(args, config_object, artifacts):
 
     all_measurements = artifacts.measurements
     cmd_measure.measure(all_measurements, timestamp_of_download,
-                        args.download_dir, args.measurement_log)
+                        args.download_dir, args.measurements_log)
