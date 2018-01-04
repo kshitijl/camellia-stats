@@ -27,9 +27,9 @@ def command(args, config, artifacts):
     measurements_to_extract = cmd_shared.select_artifacts(args.selector,
                                                           artifacts.measurements)
     measure(measurements_to_extract, args.as_of, args.download_dir,
-            args.measurement_log)
+            args.measurements_log)
 
-def measure(measurements_to_extract, as_of, download_dir, measurement_log):    
+def measure(measurements_to_extract, as_of, download_dir, measurements_log):    
     measurement_results = {}
     for measurement in measurements_to_extract:
         logging.info({'message': 'Attempting measurement',
@@ -63,4 +63,4 @@ def measure(measurements_to_extract, as_of, download_dir, measurement_log):
                           'exception': e})
     
     append_to_log(initialize_measurement_log(measurements_log),
-                  Snapshot(args.as_of, measurement_results))
+                  Snapshot(as_of, measurement_results))
