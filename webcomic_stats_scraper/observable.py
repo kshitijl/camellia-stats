@@ -1,7 +1,11 @@
 class Observable(object):
+    is_rank_observable = False
     def __init__(self, name, measurement, transformation):
         self.name, self.measurement = name, measurement
         self.transformation         = transformation
+
+class RankObservable(Observable):
+    is_rank_observable = True
 
 def identity(m):
     return Observable(m.name, m, lambda x: x)
@@ -18,4 +22,4 @@ def rank_of_comic_in(comic_name, creator_name, comics_measurement):
         return None
 
     observable_name = "rank-in." + comics_measurement.name
-    return Observable(observable_name, comics_measurement, get_rank)
+    return RankObservable(observable_name, comics_measurement, get_rank)
