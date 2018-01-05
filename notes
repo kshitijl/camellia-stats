@@ -1,14 +1,10 @@
-- Undersample: one row of data per day: that with timestamp closest to
-  9pm.
-
 - Column names and ordering: get them from Julie's current production
   spreadsheet.
 
-- Rankings: report the best rank achieved over the course of the day.
-
-- Fine-grained ranking: a separate report of just the ranks, at the
-  finest granularity available.
+- Rankings: in the daily report, report the best rank achieved over
+  the course of the day.
 
 - Use python3, not python2
 
 - Log errors in [download-pages]: 403 or 404 responses
+
