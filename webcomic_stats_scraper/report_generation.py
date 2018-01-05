@@ -59,3 +59,16 @@ def write_csv(snapshots, output_file):
         timestamp_str = timestamp_utils.to_string(row.timestamp)
         line = [timestamp_str] + [values[name] for name in column_names]
         writer.writerow(line)
+
+def sort_by_timestamp(snapshots):
+    return list(sorted(snapshots, key=lambda snapshot:snapshot.timestamp))
+
+def observations_from_log(observables, log_filename):
+    snapshots = [Snapshot.from_data_dict(json.loads(line)['snapshot']) \
+                 for line in file(log_filename).readlines()]
+
+    snapshot_log = sorted(snapshots, key=lambda snapshot:snapshot.timestamp)
+    observations = compute_observations(observables, flatten_by_timestamp(snapshot_log))
+
+    return observations
+    
