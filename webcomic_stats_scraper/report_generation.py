@@ -1,6 +1,6 @@
 import json, collections, csv
 
-import timestamp_utils
+import timestamp_utils, report_columns
 from snapshot import Snapshot
 
 def all_measurement_names(snapshot_log):
@@ -51,13 +51,15 @@ def compute_observations(observables, snapshots):
 def write_csv(snapshots, output_file):
     writer = csv.writer(output_file, delimiter=',')
 
-    column_names = sorted(all_measurement_names(snapshots))
+    available_columns = all_measurement_names(snapshots)
+    column_names = [x for x in report_columns.columns_in_order if report_columns.our_name_for(x) in available_columns]
     writer.writerow(['timestamp'] + column_names)
 
     for row in snapshots:
         values = row.measurements
         timestamp_str = timestamp_utils.to_string(row.timestamp)
-        line = [timestamp_str] + [values[name] for name in column_names]
+        print values
+        line = [timestamp_str] + [values[report_columns.our_name_for(name)] for name in column_names]
         writer.writerow(line)
 
 def sort_by_timestamp(snapshots):
