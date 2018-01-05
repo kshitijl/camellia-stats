@@ -58,7 +58,6 @@ def write_csv(snapshots, output_file):
     for row in snapshots:
         values = row.measurements
         timestamp_str = timestamp_utils.to_string(row.timestamp)
-        print values
         line = [timestamp_str] + [values[report_columns.our_name_for(name)] for name in column_names]
         writer.writerow(line)
 
