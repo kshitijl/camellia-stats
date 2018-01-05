@@ -12,7 +12,6 @@ def generate_daily_report(all_observables, measurement_log, output_filename):
         last_snapshot_for_date = {}
 
         for snapshot in sort_by_timestamp(snapshots):
-            print snapshot.timestamp, date_of_timestamp(snapshot.timestamp)
             last_snapshot_for_date[date_of_timestamp(snapshot.timestamp)] = snapshot
             
         return last_snapshot_for_date.values()
