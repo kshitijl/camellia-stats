@@ -15,6 +15,23 @@ def generate_daily_report(all_observables, measurement_log, output_filename):
             last_snapshot_for_date[date_of_timestamp(snapshot.timestamp)] = snapshot
             
         return last_snapshot_for_date.values()
+
+    rank_observable_names = [o.name for o in all_observables if o.is_rank_observable]
+    def get_best_rank_for_each_day(snapshots):
+        best_ranks_for_date = defaultdict(dict)
+
+        for snapshot in snapshots:
+            ranks_for_snapshot = dict([(name, snapshot.values[name])
+                                       for name in rank_observable_names
+                                       if  name in snapshot.values])
+
+            date = date_of_timestamp(snapshot.timestamp)
+            for observable_name in rank_observable_names:
+                if date not in best_rank_for_date[observable_name]:
+                    best_ranks_for_date[date] = ranks_for_snapshot[observable_name]
+                else:
+                    do the minimum
+                
     
     generate_report_with_selected_rows(all_observables, measurement_log,
                                        output_filename,
