@@ -17,7 +17,7 @@ def save_content_to_timestamped_file_in_dir(content, directory, timestamp):
         os.makedirs(directory)
 
     filename = timestamped_filename(directory, timestamp)
-    with open(filename, 'w') as output_file:
+    with open(filename, 'wb') as output_file:
         output_file.write(content.encode('utf-8'))
 
 def sha256_hexencoded(text):

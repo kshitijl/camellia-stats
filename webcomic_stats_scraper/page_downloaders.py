@@ -26,7 +26,7 @@ class PlainUrlPage(object):
 
     @property
     def name(self):
-        return sha256_hexencoded(self.url)
+        return sha256_hexencoded(self.url.encode('utf-8'))
 
 class WebtoonsLoggedInPage(object):
     webtoons_login_url = 'http://m.webtoons.com/member/login/doLoginById'
@@ -42,32 +42,34 @@ class WebtoonsLoggedInPage(object):
                       "username"   : self.username,
                       "url"        : self.url})
         
-        from splinter import Browser
+        from selenium import webdriver
 
-        with Browser('chrome', headless=True) as browser:
-            browser.visit(self.webtoons_login_url)
+        browser = webdriver.Firefox()
+        browser.get(self.webtoons_login_url)
 
-            username_field = browser.find_by_id("emailId")[0]
-            username_field.fill(self.username)
+        username_field = browser.find_element_by_id("emailId")
+        username_field.send_keys(self.username)
 
-            password_field = browser.find_by_id("password")[0]
-            password_field.fill(self.password)
+        password_field = browser.find_element_by_id("password")
+        password_field.send_keys(self.password)
 
-            time.sleep(5)
-            
-            login_button = browser.find_by_id("btnLogIn")[0]
-            login_button.click()
+        time.sleep(5)
 
-            logging.info({"message": "Finished attempting login"})                          
+        login_button = browser.find_element_by_id("btnLogIn")
+        login_button.click()
 
-            browser.visit(self.url)
+        logging.info({"message": "Finished attempting login"})                          
 
-            logging.info({"message": "Visiting actual page of interest"})
-            desired_content = browser.html
+        browser.get(self.url)
+
+        logging.info({"message": "Visiting actual page of interest"})
+        desired_content = browser.page_source
+
+        browser.close()
 
         return desired_content
 
     @property
     def name(self):
-        return sha256_hexencoded(self.url + self.username)
+        return sha256_hexencoded((self.url + self.username).encode('utf-8'))
 

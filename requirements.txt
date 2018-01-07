@@ -1,2 +1,4 @@
-sudo pacman -S git python-pip chromium
-sudo pip install requests splinter python-json-logger lxml
+selenium
+requests
+python-json-logger
+lxml

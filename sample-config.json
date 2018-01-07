@@ -1,7 +1,5 @@
-{ "download_dir"      : "./output-artifacts/downloaded-pages",
-	"measurements_log"  : "./output-artifacts/measurements-log",
-	"comic_name"        : "Camellia",
+{ "comic_name"        : "Camellia",
 	"creator_name"      : "ladypcpx",
-	"webtoons_username" : "",
-	"webtoons_password" : ""
+	"webtoons_username" : "your-username",
+	"webtoons_password" : "your-password"
 }
