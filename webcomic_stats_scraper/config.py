@@ -2,7 +2,7 @@ import json
 
 class Config(object):
     def __str__(self):
-        visible_config = {k:v for (k,v) in self.__dict__.iteritems() if 'password' not in k}
+        visible_config = {k:v for (k,v) in self.__dict__.items() if 'password' not in k}
         return str(visible_config)
 
 def load_config(config_file):

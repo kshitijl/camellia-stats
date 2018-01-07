@@ -1,6 +1,4 @@
 *~
 *.pyc
 .DS_Store
-virtual-environment
-run-logs
 output-artifacts/downloaded-pages

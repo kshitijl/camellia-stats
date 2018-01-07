@@ -29,7 +29,7 @@ def flatten_by_timestamp(snapshots_log):
         timestamp    = snapshot.timestamp
         measurements = snapshot.measurements
         
-        for measurement_name, measurement_result in measurements.iteritems():
+        for measurement_name, measurement_result in measurements.items():
             by_timestamp[timestamp][measurement_name] = measurement_result
 
     timestamps_in_order = sorted(by_timestamp.keys())
@@ -66,7 +66,7 @@ def sort_by_timestamp(snapshots):
 
 def observations_from_log(observables, log_filename):
     snapshots = [Snapshot.from_data_dict(json.loads(line)['snapshot']) \
-                 for line in file(log_filename).readlines()]
+                 for line in open(log_filename).readlines()]
 
     snapshot_log = sorted(snapshots, key=lambda snapshot:snapshot.timestamp)
     observations = compute_observations(observables, flatten_by_timestamp(snapshot_log))

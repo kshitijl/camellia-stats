@@ -48,7 +48,7 @@ def measure(measurements_to_extract, as_of, download_dir, measurements_log):
                            'filename': page_filename})
             continue
         
-        content = file(page_filename).read()
+        content = open(page_filename).read()
         try:
             result  = measurement.parse(content)
         

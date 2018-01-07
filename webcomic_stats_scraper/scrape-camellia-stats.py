@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import argparse
+import argparse, sys
 
 import cmd_download, cmd_measure, cmd_download_and_measure
 import cmd_generate_reports
@@ -17,6 +17,7 @@ def add_measurements_log_argument(parser):
                         default="./output-artifacts/measurements-log")
         
 def main():
+    initialize_logging.log_in_json_format()        
     parser = argparse.ArgumentParser(
         description="Tools for downloading and scraping webcomic stats") 
 
@@ -30,7 +31,7 @@ def main():
     
     parser_measure = subparsers.add_parser('measure', \
         help='Extract numbers or other data from downloaded html content')
-    parser_measure.add_argument('--as-of', type=timestamp_utils.of_string, required=True)    
+    parser_measure.add_argument('--as-of', type=timestamp_utils.of_string)
     add_download_dir_argument    (parser_measure)
     add_measurements_log_argument(parser_measure)    
     
@@ -56,14 +57,18 @@ def main():
     parser_measure             .set_defaults(func=cmd_measure.command)
     parser_generate_reports    .set_defaults(func=cmd_generate_reports.command)
     parser_download_and_measure.set_defaults(func=cmd_download_and_measure.command)
-    
-    args = parser.parse_args()
 
-    initialize_logging.log_in_json_format()        
+    args = parser.parse_args()
+    try:
+        selected_subcommand = args.func
+    except:
+        print("Missing subcommand")
+        parser.print_usage()
+        sys.exit(2)
 
     config_object = config.load_config(args.config_file)
     artifacts = all_artifacts(config_object)
-    args.func(args, config_object, artifacts)
+    selected_subcommand(args, config_object, artifacts)
 
 if __name__ == "__main__":
     main()

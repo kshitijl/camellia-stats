@@ -70,4 +70,4 @@ class WebtoonsLoggedInPage(object):
     @property
     def name(self):
         return sha256_hexencoded(self.url + self.username)
-    
+

@@ -73,7 +73,7 @@ def write_observation_snapshots_and_their_diffs_to_csv(observations, output_file
 
 def write_snapshots_to_csv(snapshots, output_filename):
     final_report = with_empty_cells_set_to_none(snapshots)
-    write_csv(sort_by_timestamp(final_report), file(output_filename, 'w'))
+    write_csv(sort_by_timestamp(final_report), open(output_filename, 'w'))
 
 def command(args, config, artifacts):
     generate_rank_report (artifacts.observables, args.measurements_log, args.rank_report)
