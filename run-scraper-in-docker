@@ -1,2 +1,5 @@
-#/usr/bin/env sh
-docker run --rm -it -v $(pwd):/repo-root -v ~/secrets:/config  camellia-0 bash
+#!/usr/bin/env sh
+#-*- sh -*-
+
+mode=$1
+docker run --rm -it -v $(pwd):/repo-root -v ~/secrets:/config  camellia-0-${mode} ./run-scraper.sh
