@@ -1,3 +1,2 @@
- * * * * * ls -altr camellia-stats/deployment/run-scraper-in-docker > logs/stdout-test 2>logs/stderr-test
- * * * * * foobar > logs/stdout-test-2 2>logs/stderr-test-2
- */30 * * * * camellia-stats/deployment/run-scraper-in-docker > logs/stdout 2>logs/stderr
+ */30 * * * * camellia-stats/deployment/run-scraper-in-docker prod > logs/stdout 2>logs/stderr
+ 
